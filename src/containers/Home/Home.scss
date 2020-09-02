@@ -1,0 +1,183 @@
+.home-page {
+  .header {
+    background-color: #2160df;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    .logo {
+      width: 30%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .header-right {
+      width: 70%;
+      // display: flex;
+      // flex-direction: row-reverse;
+      .nav-bar {
+        float: right;
+        margin-right: 20px;
+        ul {
+          li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 10px;
+          }
+        }
+      }
+      .text {
+        padding: 30px;
+        color: #fff;
+        margin-top: 180px;
+        h1 {
+          color: #2ec19c;
+          font-size: 35px;
+          margin: auto;
+        }
+        p {
+          font-size: 20px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  .page-content {
+    margin: 0 auto;
+    width: 80%;
+    .card-container {
+      margin-top: -20px;
+      .info-card {
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+        }
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          width: 40%;
+          // padding-right: 15%;
+          h3 {
+            letter-spacing: 3px;
+            color: deeppink;
+            margin: 0;
+          }
+          h1 {
+            font-size: 35px;
+            margin: 0;
+          }
+          button {
+            padding: 8px 20px;
+            border: none;
+            background: #2afd78;
+            border-radius: 15px;
+          }
+        }
+        .imgbox {
+          width: 40%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .work-container {
+      .work-list {
+        display: flex;
+        .work-item {
+          width: 33.3%;
+        }
+      }
+    }
+  }
+}
+.content {
+  height: 220px;
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+}
+.content .love h3 {
+  color: #d345c2;
+  font-size: 10px;
+}
+.love {
+  padding: 20px;
+  width: 50%;
+}
+.imgbox {
+  width: 100%;
+  float: right;
+}
+.imgbox img {
+  width: 100%;
+}
+.love h1 {
+  color: #000000;
+  font-size: 20px;
+  margin: auto;
+}
+.love button {
+  border-radius: 12px;
+  background-color: #2cfe77;
+  padding: 4px;
+  width: 15%;
+}
+.content1 {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.content1 .imgbox1 {
+  width: 30%;
+  margin: auto;
+}
+.hate {
+  width: 50%;
+  padding: 20px;
+}
+.content1 .hate h3 {
+  color: #d345c2;
+  font-size: 10px;
+}
+.hate h1 {
+  color: #000000;
+  font-size: 20px;
+  margin: auto;
+}
+.hate button {
+  border-radius: 12px;
+  background-color: #2afd78;
+  padding: 4px;
+  width: 15%;
+}
+// h1 {
+//   margin-left: 170px;
+// }
+
+.allwork {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 40px 0px 40px;
+  justify-content: space-evenly;
+}
+.work h1 {
+  font-size: 20px;
+  margin: auto;
+}
+.allwork .work h3 {
+  color: #d345c2;
+  font-size: 10px;
+}
+.footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 10px;
+}
