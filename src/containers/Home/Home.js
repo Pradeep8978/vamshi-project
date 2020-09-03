@@ -81,25 +81,52 @@ const Home = () => {
             <div className="work-item">
               <img src={pic}></img>
               <h3>
-                DIGITAL ACTIVATION<br></br>ENGAGEs
+                DIGITAL ACTIVATION<br></br>ENGAGES BIG
               </h3>
               <h1>
                 #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
               </h1>
             </div>
-            <div className="work">
+            <div className="work-item">
               <img src={pic}></img>
               <h3>
-                DIGITAL ACTIVATION<br></br>ENGAGEs
+                DIGITAL ACTIVATION<br></br> ENGAGES BIG
               </h3>
               <h1>
                 #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
               </h1>
             </div>
-            <div className="work">
+            <div className="work-item">
               <img src={pic}></img>
               <h3>
-                DIGITAL ACTIVATION<br></br>ENGAGEs
+                DIGITAL ACTIVATION<br></br>ENGAGES BIG
+              </h3>
+              <h1>
+                #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
+              </h1>
+            </div>
+            <div className="work-item">
+              <img src={pic}></img>
+              <h3>
+                DIGITAL ACTIVATION<br></br>ENGAGES  BIG
+              </h3>
+              <h1>
+                #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
+              </h1>
+            </div>
+            <div className="work-item">
+              <img src={pic}></img>
+              <h3>
+                DIGITAL ACTIVATION<br></br>ENGAGES  BIG
+              </h3>
+              <h1>
+                #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
+              </h1>
+            </div>
+            <div className="work-item">
+              <img src={pic}></img>
+              <h3>
+                DIGITAL ACTIVATION<br></br>ENGAGES  BIG
               </h3>
               <h1>
                 #Loveimpormtwo-<br></br>1 Love Booth, 200 Dates
@@ -108,6 +135,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="footer">
         <h1>footer</h1>
       </div>
