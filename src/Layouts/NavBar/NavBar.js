@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './NavBar.css'
+import Logo from "../../images/wa_logo_yellow.png"
 class NavBar extends Component {
     render() {
         return (
@@ -10,14 +11,11 @@ class NavBar extends Component {
         <i className="fas fa-bars"></i>
       </label>
       <label className="logo">
-        DOIDDE
+       <img src={Logo}  width="100px" height="70px"/>
       </label>
       <ul>
-        <li><a className="active" href="">home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fas fa-expand"></i></a></li>
       </ul>
     </nav>
     <section className="bg-wrapper"></section>
