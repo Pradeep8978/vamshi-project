@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NavBar from "./../../Layouts/NavBar/NavBar";
 import "./JoinUs.scss";
-import Yellowimg from "./../../images/Annotation 2020-09-03 132008.png";
-import Pinkimg from "./../../images/Annotation 2020-09-03 132111.png";
+// import Yellowimg from "./../../images/Annotation 2020-09-03 132008.png";
+// import Pinkimg from "./../../images/Annotation 2020-09-03 132111.png";
 import Rotation from "./../../Layouts/Rotation/Rotation";
 import Years from "./../../Layouts/Years/Years";
 class JoinUs extends Component {
@@ -44,8 +44,7 @@ class JoinUs extends Component {
               </div>
               <div className="imgBlog">
                 {/* <img src={Yellowimg} /> */}
-                  <Rotation />
-                
+                <Rotation />
 
                 <div className="yrs">
                   <Years />
@@ -62,10 +61,9 @@ class JoinUs extends Component {
                 </p>
               </div>
               <div className="imgBlog">
-              <div className="rotation-text">
-               
-                <Rotation />
-</div>
+                <div className="rotation-text">
+                  <Rotation />
+                </div>
                 <div className="yrs">
                   <Years />
                 </div>
@@ -89,6 +87,25 @@ class JoinUs extends Component {
                 </div>
               </div>
             </section>
+            <section>
+              <div className="textBlog">
+                <h4>QUIRKY PERSONNA HEADER | DESIGNATION</h4>
+                <p>
+                  We think long and hard about your business challenges and
+                  comeup with the best way to reach your goals. Thn we develop
+                  strategies.
+                </p>
+              </div>
+              <div className="imgBlog">
+                <div className="rotation-text">
+                  <Rotation />
+                </div>
+                <div className="yrs">
+                  <Years />
+                </div>
+              </div>
+            </section>
+            
           </div>
         </main>
       </>
