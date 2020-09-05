@@ -38,7 +38,7 @@ label.logo {
 }
 a.active,
 a:hover {
-  background-color: tomato;
+  /* background-color: tomato; */
   transition: 0.5s;
 }
 .checkbtn {
@@ -95,7 +95,6 @@ a:hover {
 }
 .bg-wrapper {
   background:url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Office-Meeting-Simple-Background-Image.jpeg");
- 
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
