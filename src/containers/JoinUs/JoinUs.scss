@@ -1,0 +1,100 @@
+.joinus-main {
+  // width: 60%;
+  // margin: 0 auto;
+  .join-us-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -130px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 858px) {
+      width: 100%;
+    }
+    .joinus-heading {
+      display: flex;
+      color: #fff;
+      .heading {
+        width: 70%;
+        h2 {
+          letter-spacing: 2px;
+        }
+        p {
+          margin-bottom: 10px;
+          margin-top: 10px;
+          font-size: 17px;
+        }
+      }
+      .filterblog {
+        width: 30%;
+        text-align: end;
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 10px #ddd;
+    margin-bottom: 20px;
+    &:nth-child(odd){
+      .imgBlog{
+        background-color: deeppink;
+        .rotation-text #circle text {
+          fill: yellow ;
+        }
+        .yrs {
+          #app{
+            color: yellow;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 858px) {
+      flex-direction: column;
+    }
+    .textBlog {
+      width: 70%;
+      padding: 20px;
+      @media only screen and (max-width: 858px) {
+        width: 50%;
+      }
+      h4 {
+        letter-spacing: 4px;
+        font-family: revert;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      p {
+        margin-top: 8px;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+    }
+    .imgBlog {
+      width: 150px;
+      background-color: yellow;
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+      // &:nth-child(odd){
+      //   background-color: deeppink;
+      // }
+     
+      
+      .yrs {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+      }
+      img {
+        width: 70%;
+        float: right;
+        @media only screen and (max-width: 858px) {
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+  }
+}
