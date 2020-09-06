@@ -7,7 +7,7 @@ import Rotation from "./../../Layouts/Rotation/Rotation";
 class Features extends Component {
   render() {
     return (
-      <main>
+      <main className="features-container">
         <section className="firstBlog">
           <div className="imgBlog">
             <img src={Image} />
