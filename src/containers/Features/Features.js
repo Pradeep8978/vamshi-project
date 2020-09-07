@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import "./Features.scss";
 import Image from "../../images/lllogoooo.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
-import Rotation from "./../../Layouts/Rotation/Rotation";
-
+import Rotation from "./../../components/Rotation/Rotation";
 class Features extends Component {
   render() {
     return (
@@ -15,10 +14,7 @@ class Features extends Component {
           <div className="contentBlog">
             <div>
               <h2>Hello, How do you do?</h2>
-              <p>
-                We help brands become a real and meaningful contributor to our
-                lives.
-              </p>
+              <p>We help brands become a real and meaningful contributor to our lives.</p>
             </div>
           </div>
         </section>
@@ -33,10 +29,7 @@ class Features extends Component {
                 #LoveImporttwo-
                 <br />1 Love Both, 200Dates
               </h2>
-              <p>
-                We help brands become a real and meaningful contributor to our
-                lives.
-              </p>
+              <p>We help brands become a real and meaningful contributor to our lives.</p>
               <button>See Now</button>
             </div>
           </div>
@@ -44,10 +37,9 @@ class Features extends Component {
         <section className="drumbeatBlog">
           <div className="whiteBg">
             <div className="subDrumBeat">
-            <h2>DRUMBEAT</h2>
+              <h2>DRUMBEAT</h2>
               <div className="rotion-blog">
-              <Rotation/>
-
+                <Rotation />
               </div>
               <div className="drumBeatImagesBlog">
                 <div className="drumimg">
@@ -81,11 +73,10 @@ class Features extends Component {
             </div>
             <div className="text-wrapper-blog">
               <p>
-                We think long and hard about your business challenges and comeup
-                with the best way to reach your goals. Thn we develop
-                strategies. We think long and hard about your business
-                challenges and comeup with the best way to reach your goals. Thn
-                we develop strategies.
+                We think long and hard about your business challenges and comeup with the best way
+                to reach your goals. Thn we develop strategies. We think long and hard about your
+                business challenges and comeup with the best way to reach your goals. Thn we develop
+                strategies.
               </p>
             </div>
           </div>
@@ -108,37 +99,47 @@ class Features extends Component {
           <div className="">
             <h2>LET'S HANGS</h2>
             <p>
-              We think long and hard about your business challenges and comeup
-              with the best way to reach your goals.
+              We think long and hard about your business challenges and comeup with the best way to
+              reach your goals.
             </p>
             <h4>
               <b>Address:</b>
             </h4>
             <p>
-              We think long and hard about your business challenges and comeup
-              with the best way to reach your goals.
+              We think long and hard about your business challenges and comeup with the best way to
+              reach your goals.
             </p>
-            <p><i class="fas fa-phone" style={{color:"#f814cb"}}></i> &nbsp;Contact Us : +91 42789456</p>
+            <p>
+              <i class="fas fa-phone" style={{ color: "#f814cb" }}></i> &nbsp;Contact Us : +91
+              42789456
+            </p>
             {/* <p style={{color:"#f814cb"}}><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; <a href="#"/></a> </p> */}
-          <p style={{color:"#f814cb"}}><i class="fa fa-map-marker" style={{fontSize:"14px"}} aria-hidden="true"></i>&nbsp;<u>Get Discovers</u></p>
+            <p style={{ color: "#f814cb" }}>
+              <i class="fa fa-map-marker" style={{ fontSize: "14px" }} aria-hidden="true"></i>&nbsp;
+              <u>Get Discovers</u>
+            </p>
           </div>
           <form>
             <div className="rotationcmp">
-            <Rotation />
+              <Rotation />
             </div>
             <input type="text" placeholder="name" />
             <input type="text" placeholder="Email" />
             <input type="text" placeholder="Contact no:" />
             <ul>
-              <li><input type="radio"/> &nbsp; New Business </li>
-              <li><input type="radio"/> &nbsp; Job activity</li>
-              <li><button>SUBMIT</button> </li>
+              <li>
+                <input type="radio" /> &nbsp; New Business{" "}
+              </li>
+              <li>
+                <input type="radio" /> &nbsp; Job activity
+              </li>
+              <li>
+                <button>SUBMIT</button>{" "}
+              </li>
             </ul>
           </form>
         </section>
-        <footer>
-          footer
-        </footer>
+        <footer>footer</footer>
       </main>
     );
   }
