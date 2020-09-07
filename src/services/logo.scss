@@ -1,0 +1,40 @@
+.services{
+ .header{
+    background-color: #f814cb;
+    margin:0 auto;
+    width: 40%;
+     height:auto;
+    padding-bottom: 50px;
+    .logo{
+       
+        text-align: center;
+           img{
+            width: 100%;
+           }
+        }
+            .info{
+            width: 100%;
+            margin-left:25px;
+            font-size: 10px;
+        h3{
+            color:#ffffff;
+            
+        }
+        p{
+            color:#ffffff;
+        
+        }}
+        button{
+            border-radius:20px;
+            background-color: #2cfe77;
+            color:#000000;
+            padding: 3px 18px;
+            border: none;
+            outline: none;
+            font-size: 10px;
+        }
+    }
+
+    
+}
+

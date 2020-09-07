@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./Features.scss";
 import Image from "../../images/lllogoooo.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
-import Rotation from "./../../Layouts/Rotation/Rotation";
 import Carousal from "./../../Layouts/Carousal/Carousal";
+
+import Rotation from "./../../components/Rotation/Rotation";
 
 class Features extends Component {
   render() {
@@ -87,11 +88,10 @@ class Features extends Component {
             </div>
             <div className="text-wrapper-blog">
               <p>
-                We think long and hard about your business challenges and comeup
-                with the best way to reach your goals. Thn we develop
-                strategies. We think long and hard about your business
-                challenges and comeup with the best way to reach your goals. Thn
-                we develop strategies.
+                We think long and hard about your business challenges and comeup with the best way
+                to reach your goals. Thn we develop strategies. We think long and hard about your
+                business challenges and comeup with the best way to reach your goals. Thn we develop
+                strategies.
               </p>
             </div>
             <div className="responsive-images-blog">
@@ -122,15 +122,19 @@ class Features extends Component {
           <div className="">
             <h2>LET'S HANGS</h2>
             <p>
-              We think long and hard about your business challenges and comeup
-              with the best way to reach your goals.
+              We think long and hard about your business challenges and comeup with the best way to
+              reach your goals.
             </p>
             <h4>
               <b>Address:</b>
             </h4>
             <p>
-              We think long and hard about your business challenges and comeup
-              with the best way to reach your goals.
+              We think long and hard about your business challenges and comeup with the best way to
+              reach your goals.
+            </p>
+            <p>
+              <i class="fas fa-phone" style={{ color: "#f814cb" }}></i> &nbsp;Contact Us : +91
+              42789456
             </p>
             <p>
               <i class="fas fa-phone" style={{ color: "#f814cb" }}></i>{" "}

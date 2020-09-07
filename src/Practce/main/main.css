@@ -1,0 +1,23 @@
+main{
+    /* display: flex; */
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #000;
+    height: 130px;
+}
+.frst{
+    width: 25%;
+}
+.secnd{
+    width: 25%;
+}
+.thrd{
+    width: 25%;
+}
+.fourt{
+    width: 25%;
+}
+img{
+    /* width: 100%; */
+    /* height: 130px; */
+}
