@@ -5,9 +5,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-body {
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
+
 .navigation {
   background-color: #f814cb;
   height: 80px;
@@ -94,7 +92,7 @@ a:hover {
   }
 }
 .bg-wrapper {
-  background:url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Office-Meeting-Simple-Background-Image.jpeg");
+  background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Office-Meeting-Simple-Background-Image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
