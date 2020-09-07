@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./contactus.scss"
 import logo from "../images/wa_logo_yellow.png"
-// import Letshang from "../services/letshang"
+
 
 class contactus extends Component {
     render() {
@@ -23,7 +23,7 @@ class contactus extends Component {
                                 <p>If you're ever in the neighbourhood swing by. Or leave your details here and we'll get in touch with you! </p>
                                 <p><b>Address:</b> <br></br>205/206,Eco House,Vishweswar Nagar,Off Aarey Road,Goregaon East,Mumbai,Maharastra,400063</p>
                                 <span><i class="fa fa-phone phone" aria-hidden="true"></i>Contact us:+022 4037 9988 </span>
-                                <h5><i class="fa fa-map-marker map-marker" aria-hidden="true"></i>Get Direction+</h5>
+                                <p className="direct"><i class="fa fa-map-marker map-marker" aria-hidden="true"></i>Get Direction+</p>
 
                             </div>
                             <div className="form">
@@ -34,7 +34,7 @@ class contactus extends Component {
                                     <div className="radio">
                                         <div className="radio-op"><input type="radio" id="radio" value="New business"></input>&nbsp;New business</div>
                                         <div className="radio-op"><input type="radio" id="radio" value="Job enqiury"></input>&nbsp;Job enqiury</div>
-                                        <button>Submit</button>
+                                        <button><b>Submit</b></button>
                                     </div>
 
                                 </form>
