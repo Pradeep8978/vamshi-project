@@ -1,0 +1,107 @@
+.about-us-wrapper {
+  /* width: 80%;
+    margin: 0 auto; */
+
+  .wrapper {
+    background-color: #f1fd2d;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @media (max-width: 1024px) {
+      height: 450px;
+    }
+    @media (max-width: 500px) {
+      height: auto;
+      flex-direction: column;
+    }
+
+    .navbar {
+      .navbar-collapse {
+        .nav-link {
+          color: blue;
+          i {
+            color: blue;
+          }
+        }
+      }
+    }
+    .img-blog {
+      width: 30%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    .text-blog {
+      width: 70%;
+      @media (max-width: 500px) {
+        width: 100%;
+        padding: 0 20px;
+      }
+      /* background-color: blue; */
+      display: flex;
+      align-items: center;
+      .text-content {
+        margin-left: 10%;
+        @media (max-width: 500px) {
+          margin-left: 0;
+        }
+        p {
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 1.2;
+        }
+        h2 {
+          color: #f7009e;
+        }
+      }
+    }
+    #circle {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-left: 18px;
+      position: absolute;
+      right: 75px;
+      bottom: -30px;
+      padding-bottom: 0;
+      text {
+        fill: #24fd78;
+        font-size: 18px;
+      }
+    }
+  }
+  .middleBlog {
+    .container {
+      padding: 50px 0;
+      @media (max-width: 500px) {
+        padding: 0 20px;
+      }
+      h2 {
+        color: #f7009e;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 800;
+        font-family: "Nunito", sans-serif;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #000;
+      }
+    }
+  }
+
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+}
