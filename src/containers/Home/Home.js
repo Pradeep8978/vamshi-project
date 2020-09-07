@@ -4,23 +4,17 @@ import download from "./../../images/wa_logo.png";
 import pic from "./../../images/potti.png";
 import InfoCard from "./InfoCard";
 import Rotation from "../../components/Rotation/Rotation";
+import NavBar from "../../Layouts/NavBar/NavBar";
 
 const Home = () => {
   return (
     <div className="home-page">
       <div className="header">
+        <NavBar />
         <div className="logo">
           <img src={download}></img>
         </div>
         <div className="header-right">
-          <div className="nav-bar">
-            <ul>
-              <li>Home</li>
-              <li>Works</li>
-              <li>About</li>
-              <li>Get in touch</li>
-            </ul>
-          </div>
           <div className="text">
             <h1>Effectiveness through influence</h1>
             <p>
