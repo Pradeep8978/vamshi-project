@@ -17,7 +17,7 @@ class contactus extends Component {
                         </div> */}
             <NavBar />
           </div>
-          <div className="text-form-container">
+          <div className="text-form-container ">
             <div className="text-form">
               <div className="text">
                 <h1>LET'S HANG</h1>
@@ -29,12 +29,13 @@ class contactus extends Component {
                   <b>Address:</b> <br></br>205/206,Eco House,Vishweswar Nagar,Off Aarey
                   Road,Goregaon East,Mumbai,Maharastra,400063
                 </p>
-                <span>
+                <div className="icon-line">
                   <i class="fa fa-phone phone" aria-hidden="true"></i>Contact us:+022 4037 9988{" "}
-                </span>
-                <h5>
-                  <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>Get Direction+
-                </h5>
+                </div>
+                <div className="icon-line">
+                  <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>
+                  <span className="directions">Get Directions +</span>
+                </div>
               </div>
               <div className="form">
                 <form>

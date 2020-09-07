@@ -13,7 +13,8 @@
   .navbar-nav {
     .nav-link {
       color: #fff;
-      &:active {
+      &:active,
+      &:hover {
         color: #fdfc57;
       }
       i {
