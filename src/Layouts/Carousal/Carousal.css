@@ -1,0 +1,42 @@
+.carousal-conatiner .carousel .thumbs{
+display: none;
+}
+.carousal-conatiner .carousel .control-dots{
+    position: unset;
+}
+.carousal-conatiner .carousel .control-dots .dot{
+    background: #f814cb;
+    outline: none;
+    border: none;
+}
+.carousal-conatiner .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{
+    height: 12px;
+    width: 12px;
+}
+.carousal-conatiner .carousel.carousel-slider .control-arrow{
+display: none;
+}
+.carousal-conatiner .carousel .carousel-status{
+    display: none;
+}
+.carousal-conatiner .carousel .slide .legend {
+    /* transition: all .5s ease-in-out; */
+    position: unset;
+    /* bottom: 40px; */
+    /* left: 50%; */
+     margin-left: 0; 
+    /* width: 90%; */
+    /* border-radius: 10px; */
+    background: #fff;
+    color: #000;
+    padding: 0px;
+    /* font-size: 12px; */
+    text-align: left;
+    opacity:unset;
+    transition: unset;
+}
+.carousal-conatiner .carousel .slide{
+    background: #fff;
+    text-align: left;
+
+}

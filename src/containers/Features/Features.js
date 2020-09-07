@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import "./Features.scss";
 import Image from "../../images/lllogoooo.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
+import Carousal from "./../../Layouts/Carousal/Carousal";
+
 import Rotation from "./../../components/Rotation/Rotation";
+
 class Features extends Component {
   render() {
     return (
@@ -14,7 +17,11 @@ class Features extends Component {
           <div className="contentBlog">
             <div>
               <h2>Hello, How do you do?</h2>
-              <p>We help brands become a real and meaningful contributor to our lives.</p>
+              <p>
+                We help brands become a real and meaningful contributor to our
+                lives.
+              </p>
+              <button>See Now</button>
             </div>
           </div>
         </section>
@@ -24,12 +31,17 @@ class Features extends Component {
           </div>
           <div className="textBlog">
             <div>
-              <p>STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE</p>
+              <p className="step-content">
+                STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE
+              </p>
               <h2>
                 #LoveImporttwo-
                 <br />1 Love Both, 200Dates
               </h2>
-              <p>We help brands become a real and meaningful contributor to our lives.</p>
+              <p className="step-content-two">
+                We help brands become a real and meaningful contributor to our
+                lives.
+              </p>
               <button>See Now</button>
             </div>
           </div>
@@ -61,6 +73,9 @@ class Features extends Component {
                   <button>view all items</button>
                 </div>
               </div>
+              <div className="carousalBlog">
+                <Carousal />
+              </div>
             </div>
           </div>
         </section>
@@ -78,6 +93,14 @@ class Features extends Component {
                 business challenges and comeup with the best way to reach your goals. Thn we develop
                 strategies.
               </p>
+            </div>
+            <div className="responsive-images-blog">
+            <img src="https://image1.masterfile.com/getImage/ODc3LTA4MTI5NDM3ZW4uMDAwMDAwMDA=AEnoCK/877-08129437en_Masterfile.jpg" />
+            <img src="https://i.pinimg.com/474x/ea/27/0d/ea270d4d381838c06c5b004edfe64950.jpg" />
+            </div>
+            <div className="responsive-images-blog2">
+            <img src="https://image.freepik.com/free-photo/beautiful-business-woman-blue-suit-is-smiling-white-background_33799-2639.jpg" />
+            <img src="https://i.pinimg.com/originals/10/17/23/1017230f6ed9a3ecdbb65ea9494bdc58.jpg" />
             </div>
           </div>
         </section>
@@ -113,10 +136,18 @@ class Features extends Component {
               <i class="fas fa-phone" style={{ color: "#f814cb" }}></i> &nbsp;Contact Us : +91
               42789456
             </p>
+            <p>
+              <i class="fas fa-phone" style={{ color: "#f814cb" }}></i>{" "}
+              &nbsp;Contact Us : +91 42789456
+            </p>
             {/* <p style={{color:"#f814cb"}}><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; <a href="#"/></a> </p> */}
             <p style={{ color: "#f814cb" }}>
-              <i class="fa fa-map-marker" style={{ fontSize: "14px" }} aria-hidden="true"></i>&nbsp;
-              <u>Get Discovers</u>
+              <i
+                class="fa fa-map-marker"
+                style={{ fontSize: "14px" }}
+                aria-hidden="true"
+              ></i>
+              &nbsp;<u>Get Discovers</u>
             </p>
           </div>
           <form>
