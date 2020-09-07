@@ -4,6 +4,7 @@ import Image from "../../images/lllogoooo.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
 import Rotation from "./../../Layouts/Rotation/Rotation";
 import Carousal from "./../../Layouts/Carousal/Carousal";
+import ArrowCarousal from "./../../Layouts/ArrowCarousal/ArrowCarousal"
 
 class Features extends Component {
   render() {
@@ -15,7 +16,7 @@ class Features extends Component {
           </div>
           <div className="contentBlog">
             <div>
-              <h2>Hello, How do you do?</h2>
+              <h2>Hello. How do you do?</h2>
               <p>
                 We help brands become a real and meaningful contributor to our
                 lives.
@@ -26,7 +27,8 @@ class Features extends Component {
         </section>
         <section className="secondBlog">
           <div className="img-wrapper">
-            <img src={Bgimage} />
+            <img src="https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" />
+         <div className="image-layer"></div>
           </div>
           <div className="textBlog">
             <div>
@@ -45,6 +47,9 @@ class Features extends Component {
             </div>
           </div>
         </section>
+        <section className="arrow-carosal-blog">
+          <ArrowCarousal/>
+        </section>
         <section className="drumbeatBlog">
           <div className="whiteBg">
             <div className="subDrumBeat">
@@ -55,19 +60,17 @@ class Features extends Component {
               <div className="drumBeatImagesBlog">
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
-                  <h2>Lorem ipsum doler with site amen</h2>
+                  <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
-
-                  <h2>Lorem ipsum doler with site amen</h2>
+                  <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
-
-                  <h2>Lorem ipsum doler with site amen</h2>
+                  <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                   <button>view all items</button>
                 </div>
@@ -84,6 +87,7 @@ class Features extends Component {
               <h2>
                 THE <br /> SHREWDNESS
               </h2>
+              <h1> THE  SHREWDNESS</h1>
             </div>
             <div className="text-wrapper-blog">
               <p>
@@ -150,7 +154,7 @@ class Features extends Component {
             <div className="rotationcmp">
               <Rotation />
             </div>
-            <input type="text" placeholder="name" />
+            <input type="text" placeholder="Name" />
             <input type="text" placeholder="Email" />
             <input type="text" placeholder="Contact no:" />
             <ul>
@@ -161,10 +165,13 @@ class Features extends Component {
                 <input type="radio" /> &nbsp; Job activity
               </li>
               <li>
-                <button>SUBMIT</button>{" "}
+                <button>SUBMIT</button>
               </li>
             </ul>
+
           </form>
+          <button>SUBMIT</button>
+
         </section>
         <footer>footer</footer>
       </main>

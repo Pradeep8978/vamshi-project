@@ -3,21 +3,29 @@ display: none;
 }
 .carousal-conatiner .carousel .control-dots{
     position: unset;
+    display: flex;
+    justify-content: center;
 }
 .carousal-conatiner .carousel .control-dots .dot{
     background: #f814cb;
     outline: none;
     border: none;
+    opacity: 1;
 }
 .carousal-conatiner .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{
     height: 12px;
     width: 12px;
+    margin-top: -3px;
 }
 .carousal-conatiner .carousel.carousel-slider .control-arrow{
 display: none;
 }
 .carousal-conatiner .carousel .carousel-status{
     display: none;
+}
+.carousal-conatiner .carousel .slide h4{
+    font-size: 24px;
+    line-height: 35px;
 }
 .carousal-conatiner .carousel .slide .legend {
     /* transition: all .5s ease-in-out; */
@@ -30,10 +38,11 @@ display: none;
     background: #fff;
     color: #000;
     padding: 0px;
-    /* font-size: 12px; */
+    font-size: 14px;
     text-align: left;
     opacity:unset;
     transition: unset;
+    line-height: 28px;
 }
 .carousal-conatiner .carousel .slide{
     background: #fff;
