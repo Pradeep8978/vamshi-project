@@ -18,8 +18,12 @@
     }
     .imgBlog {
       width: 40%;
+      margin-left: -113px;
+    margin-top: -50px;
       @media only screen and (max-width: 858px) {
         width: 100%;
+        margin-left: 0px;
+    margin-top: 0px;
       }
       img {
         width: 100%;
@@ -113,11 +117,13 @@
         }
 
         .step-content {
-          line-height: 30px;
+          // line-height: 30px;
           color: #f814cb;
           letter-spacing: 2px;
+          line-height: 60px;
           @media only screen and (max-width: 858px) {
-            font-size: 10px;
+            font-size: 9px;
+            line-height: 30px;
           }
         }
         .step-content-two {
@@ -126,17 +132,17 @@
       }
       button {
         background: #2cf135;
-        // color: #fff;
-        padding: 15px 20px;
+        padding: 13px 34px;
         border: none;
         outline: none;
         border-radius: 20px;
+        box-shadow: 0 7px 14px #ddd;
       }
     }
   }
   .drumbeatBlog {
     //   background: url("https://cdn4.vectorstock.com/i/1000x1000/93/63/green-and-yellow-glitch-background-vector-10779363.jpg");
-    background: url("../../images/152702-green-random-alphabet-letters-background-design.jpg");
+    background: url("../../images/wa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     // height: 560px;
@@ -152,7 +158,7 @@
 
     .whiteBg {
       background: #fff;
-
+      position: relative;
       .subDrumBeat {
         // padding: 20px;
         position: relative;
@@ -165,9 +171,9 @@
           // margin-bottom: 26px;
           font-size: 45px;
           font-weight: 600;
-        @media only screen and (max-width: 858px) {
-          font-size: 28px;
-        }
+          @media only screen and (max-width: 858px) {
+            font-size: 28px;
+          }
         }
         .rotion-blog {
           width: 148px;
@@ -178,7 +184,7 @@
             fill: blue;
           }
           @media only screen and (max-width: 858px) {
-            width: 86px;
+            width: 74px;
             position: absolute;
             left: -18px;
             top: -31px;
@@ -208,14 +214,19 @@
             width: 100%;
             // height: 100%;
           }
-          button {
-            background: #f814cb;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            outline: none;
-            border-radius: 20px;
+          span {
+            font-family: inherit;
+            color: blue;
+            line-height: 52px;
           }
+          // button {
+          //   background: #f814cb;
+          //   color: #fff;
+          //   padding: 10px 20px;
+          //   border: none;
+          //   outline: none;
+          //   border-radius: 20px;
+          // }
         }
       }
       .carousalBlog {
@@ -225,7 +236,43 @@
           margin-top: 25px;
         }
       }
+      button {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        background: #f814cb;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: 0 7px 14px #ddd;
+
+        @media only screen and (max-width: 858px) {
+          display: none;
+        }
+      }
     }
+    .viewBtnRes{
+      text-align:center;
+      button {
+        display: none;
+        background: #f814cb;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 7px 14px #ddd;
+
+        @media only screen and (max-width: 858px) {
+          display: unset;
+
+        }
+      }
+    }
+   
   }
   .bg-Black-container {
     background: #000;
@@ -385,6 +432,7 @@
           padding-right: 20px;
           @media only screen and (max-width: 858px) {
             padding: 10px;
+            font-size: 12px;
           }
           button {
             background: #30fc77;

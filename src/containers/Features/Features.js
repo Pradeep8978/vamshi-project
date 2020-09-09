@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./Features.scss";
-import Image from "../../images/lllogoooo.png";
+import Image from "../../images/Logo-wa.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
 import Rotation from "./../../Layouts/Rotation/Rotation";
 import Carousal from "./../../Layouts/Carousal/Carousal";
-import ArrowCarousal from "./../../Layouts/ArrowCarousal/ArrowCarousal"
+import ArrowCarousal from "./../../Layouts/ArrowCarousal/ArrowCarousal";
 
 class Features extends Component {
   render() {
@@ -28,7 +28,7 @@ class Features extends Component {
         <section className="secondBlog">
           <div className="img-wrapper">
             <img src="https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" />
-         <div className="image-layer"></div>
+            <div className="image-layer"></div>
           </div>
           <div className="textBlog">
             <div>
@@ -47,9 +47,7 @@ class Features extends Component {
             </div>
           </div>
         </section>
-        <section className="arrow-carosal-blog">
-          <ArrowCarousal/>
-        </section>
+       
         <section className="drumbeatBlog">
           <div className="whiteBg">
             <div className="subDrumBeat">
@@ -62,24 +60,35 @@ class Features extends Component {
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
+                  <span>-By Siddhant M. | 05 mins read</span>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
+                  <span>-By Siddhant M. | 05 mins read</span>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
-                  <button>view all items</button>
+                  <span>-By Siddhant M. | 05 mins read</span>
+
                 </div>
               </div>
               <div className="carousalBlog">
                 <Carousal />
               </div>
+              <button>view all items</button>
+
             </div>
+
           </div>
+          <div className="viewBtnRes">
+          <button >view all items</button>
+
+          </div>
+
         </section>
         <section className="bg-Black-container">
           <div className="bg-black-blog">
@@ -87,7 +96,7 @@ class Features extends Component {
               <h2>
                 THE <br /> SHREWDNESS
               </h2>
-              <h1> THE  SHREWDNESS</h1>
+              <h1> THE SHREWDNESS</h1>
             </div>
             <div className="text-wrapper-blog">
               <p>
@@ -99,12 +108,12 @@ class Features extends Component {
               </p>
             </div>
             <div className="responsive-images-blog">
-            <img src="https://image1.masterfile.com/getImage/ODc3LTA4MTI5NDM3ZW4uMDAwMDAwMDA=AEnoCK/877-08129437en_Masterfile.jpg" />
-            <img src="https://i.pinimg.com/474x/ea/27/0d/ea270d4d381838c06c5b004edfe64950.jpg" />
+              <img src="https://image1.masterfile.com/getImage/ODc3LTA4MTI5NDM3ZW4uMDAwMDAwMDA=AEnoCK/877-08129437en_Masterfile.jpg" />
+              <img src="https://i.pinimg.com/474x/ea/27/0d/ea270d4d381838c06c5b004edfe64950.jpg" />
             </div>
             <div className="responsive-images-blog2">
-            <img src="https://image.freepik.com/free-photo/beautiful-business-woman-blue-suit-is-smiling-white-background_33799-2639.jpg" />
-            <img src="https://i.pinimg.com/originals/10/17/23/1017230f6ed9a3ecdbb65ea9494bdc58.jpg" />
+              <img src="https://image.freepik.com/free-photo/beautiful-business-woman-blue-suit-is-smiling-white-background_33799-2639.jpg" />
+              <img src="https://i.pinimg.com/originals/10/17/23/1017230f6ed9a3ecdbb65ea9494bdc58.jpg" />
             </div>
           </div>
         </section>
@@ -168,10 +177,8 @@ class Features extends Component {
                 <button>SUBMIT</button>
               </li>
             </ul>
-
           </form>
           <button>SUBMIT</button>
-
         </section>
         <footer>footer</footer>
       </main>

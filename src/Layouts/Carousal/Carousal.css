@@ -42,10 +42,22 @@ display: none;
     text-align: left;
     opacity:unset;
     transition: unset;
-    line-height: 28px;
+    /* line-height: 28px; */
 }
 .carousal-conatiner .carousel .slide{
     background: #fff;
     text-align: left;
 
+}
+.carousal-conatiner .carousel .slide span{
+    font-family: inherit;
+    color: blue;
+   
+    line-height: 52px;
+}
+
+@media only screen and (max-width: 858px) {
+    .carousal-conatiner .carousel .slide h4{
+        margin-bottom: 10px;
+    }
 }

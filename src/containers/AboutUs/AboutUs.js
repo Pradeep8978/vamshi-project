@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './AboutUs.css'
-import Logo from './../../images/walogo.png'
+import Logo from './../../images/Logo-wa-2.png'
 // import NavBar from "./../../Layouts/NavBar/NavBar"
 
 class AboutUs extends Component {
@@ -8,7 +8,7 @@ class AboutUs extends Component {
         return (
             <>
 
-            <main>
+            <main className="aboutUs-container">
                 <section className="wrapper">
                     <div className="img-blog">
                         <img src={Logo} width="100%" height="450px" />
