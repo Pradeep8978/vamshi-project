@@ -37,14 +37,14 @@
     background-color: #f6f6f6;
     box-shadow: 0px 0px 10px #ddd;
     margin-bottom: 20px;
-    &:nth-child(odd){
-      .imgBlog{
+    &:nth-child(odd) {
+      .imgBlog {
         background-color: deeppink;
         .rotation-text #circle text {
-          fill: yellow ;
+          fill: yellow;
         }
         .yrs {
-          #app{
+          #app {
             color: yellow;
           }
         }
@@ -80,8 +80,7 @@
       // &:nth-child(odd){
       //   background-color: deeppink;
       // }
-     
-      
+
       .yrs {
         position: absolute;
         right: 0px;

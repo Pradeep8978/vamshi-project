@@ -1,0 +1,47 @@
+// .shred{
+//     background-color: #000;
+//     height:700px;
+//     width:100%;
+//     .ness{
+//       width:80%;
+//     //   display: flex;
+//     div h1{
+//         color: #fff;
+//         padding-left: 10px;
+//     }
+//     p{
+//         color:#fff;
+//         padding-left: 10px;
+//     }
+//     .images{
+//         display: flex;
+//         width:100%;
+//          flex-direction: row;
+//         margin: auto;
+//         padding-left: 10px;
+        
+//     }img{
+//        height:300px;
+//     }
+// }
+// }
+
+
+.bg-black{
+    background: #000;
+    height: auto;
+    width: 45%;
+    margin-left:45%;
+    section{
+        padding: 20px;
+        .ness{
+             text-align: start;
+             margin-left: 125px;
+        }
+        div{
+            color:#fff;
+            text-align: center;
+        }
+        
+    }
+}

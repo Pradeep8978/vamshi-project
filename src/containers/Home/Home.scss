@@ -2,17 +2,27 @@
   .header {
     background-color: #2160df;
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
+    @media (max-width: 1024px) {
+      height: 350px;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+      height: auto;
+    }
     .logo {
-      width: 30%;
+      // width: 30%;
       height: 100%;
       img {
-        width: 100%;
+        height: 100%;
       }
     }
     .header-right {
       width: 70%;
+      @media (max-width: 500px) {
+        width: 90%;
+      }
       // display: flex;
       // flex-direction: row-reverse;
       .nav-bar {
@@ -32,14 +42,25 @@
         padding: 30px;
         color: #fff;
         margin-top: 180px;
+        margin-left: 12%;
+        @media (max-width: 1024px) {
+          margin-left: 10px;
+          margin-top: 80px;
+        }
         h1 {
           color: #2ec19c;
-          font-size: 35px;
+          font-size: 32px;
           margin: auto;
+          @media (max-width: 1024px) {
+            font-size: 25px;
+          }
         }
         p {
-          font-size: 20px;
+          font-size: 18px;
           margin: 10px 0;
+          @media (max-width: 1024px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -47,12 +68,20 @@
 
   .page-content {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
+    @media (max-width: 1024px) {
+      width: 90%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 0 15px;
+    }
     .card-container {
       margin-top: -20px;
       .info-card {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
         &:nth-child(2n) {
           flex-direction: row-reverse;
         }
@@ -60,27 +89,41 @@
           display: flex;
           flex-direction: column;
           align-self: center;
-          width: 40%;
+          width: 45%;
           // padding-right: 15%;
           h3 {
             letter-spacing: 3px;
             color: deeppink;
+            font-size: 14px;
             margin: 0;
+            font-weight: 400;
+            margin-bottom: 10px;
+            @media (max-width: 1024px) {
+              font-size: 12px;
+            }
           }
           h1 {
             font-size: 35px;
             margin: 0;
+            line-height: 1.2;
+            @media (max-width: 1024px) {
+              font-size: 22px;
+            }
+          }
+          p {
+            margin: 15px 0;
           }
           button {
-            padding: 8px 24px;
+            padding: 10px 26px;
             border: none;
             background: #2afd78;
-            border-radius: 15px;
-          
+            border-radius: 16px;
+            font-family: "Poppins", sans-serif;
+            outline: none;
           }
         }
         .imgbox {
-          width: 40%;
+          width: 45%;
           img {
             width: 100%;
           }
@@ -88,35 +131,69 @@
       }
     }
     .work-container {
-     .work-list {
+      .work-header {
+        position: relative;
+        #circle {
+          width: 150px;
+          height: 150px;
+          padding-bottom: 0;
+          position: absolute;
+          left: -80px;
+          top: -50%;
+          text {
+            fill: #0000ff;
+          }
+        }
+        h1 {
+          font-size: 46px;
+          // &::after {
+          //   border: 1px solid #ccc;
+          // }
+          &::after {
+            content: "";
+            width: calc(100% - 250px);
+            border-bottom: solid 2px #2afd78;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: -1;
+          }
+        }
+        padding: 20px 0;
+      }
+      .work-list {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         .work-item {
           width: 30%;
-          img{
+          margin-bottom: 40px;
+          img {
             width: 100%;
           }
-          h3{
-            color:#ff1493;
+          h3 {
+            color: #ff1493;
             font-size: 10px;
-
+            letter-spacing: 2px;
+            margin: 10px 0;
           }
-          h1{
-            font-size:20px;
+          h1 {
+            font-size: 20px;
+            line-height: 1.2;
           }
-
         }
       }
     }
   }
-
 }
 
- .footer {
+.footer {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
   font-size: 10px;
- }
+  h1 {
+    padding-top: 20px;
+  }
+}
