@@ -5,26 +5,12 @@ import pic from "./../../images/potti.png";
 import InfoCard from "./InfoCard";
 import Rotation from "../../components/Rotation/Rotation";
 import NavBar from "../../Layouts/NavBar/NavBar";
+import Header from "./../../components/HeaderHome/HeaderHome";
 
 const Home = () => {
   return (
     <div className="home-page">
-      <div className="header">
-        <NavBar />
-        <div className="logo">
-          <img src={download}></img>
-        </div>
-        <div className="header-right">
-          <div className="text">
-            <h1>Effectiveness through influence</h1>
-            <p>
-              Drog 5 is inthe bussiness of creative problem solving<br></br> from integrated
-              campaign to bussiness design<br></br> our work creates real connections with people
-              and drives results
-            </p>
-          </div>
-        </div>
-      </div>
+      <Header />
       <div className="page-content">
         <div className="card-container">
           <InfoCard />
