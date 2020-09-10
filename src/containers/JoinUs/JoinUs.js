@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import NavBar from "./../../Layouts/NavBar/NavBar";
+import NavBar from "./Header";
 import "./JoinUs.scss";
 // import Yellowimg from "./../../images/Annotation 2020-09-03 132008.png";
 // import Pinkimg from "./../../images/Annotation 2020-09-03 132111.png";
 import Rotation from "./../../components/Rotation/Rotation";
 import Years from "./../../Layouts/Years/Years";
+
 class JoinUs extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,7 @@ class JoinUs extends Component {
               </div>
               <div className="filterblog">
                 <span>
-                  FILTER:RECENT &nbsp; &nbsp; &nbsp;{" "}
+                  FILTER:RECENT &nbsp; &nbsp; &nbsp;
                   <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </span>
               </div>

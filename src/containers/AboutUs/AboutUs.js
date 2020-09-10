@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./AboutUs.scss";
-import Logo from './../../images/Logo-wa-2.png'
+import Logo from './../../images/logo.png'
 import NavBar from "./../../Layouts/NavBar/NavBar";
 import Rotation from "./../../components/Rotation/Rotation";
 
@@ -13,6 +13,8 @@ class AboutUs extends Component {
             <NavBar />
             <div className="img-blog">
               <img src={Logo} width="100%" height="450px" />
+              <div className="circle-animation">
+                <Rotation/></div>
             </div>
             <div className="text-blog">
               <div className="text-content">

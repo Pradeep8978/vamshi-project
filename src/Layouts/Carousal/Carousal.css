@@ -1,3 +1,6 @@
+.carousal-conatiner{
+    /* position: relative; */
+}
 .carousal-conatiner .carousel .thumbs{
 display: none;
 }
@@ -26,6 +29,7 @@ display: none;
 .carousal-conatiner .carousel .slide h4{
     font-size: 24px;
     line-height: 35px;
+    margin-top: 20px;
 }
 .carousal-conatiner .carousel .slide .legend {
     /* transition: all .5s ease-in-out; */
@@ -54,6 +58,21 @@ display: none;
     color: blue;
    
     line-height: 52px;
+}
+
+.carousal-conatiner .img-arrow-Round-click {
+    position: absolute;
+    width: 50px;
+    padding: 17px;
+    height: 50px;
+    border-radius: 50%;
+    right: 17px;
+    bottom: 188px;
+    background-color: #f814cb;
+}
+.carousal-conatiner i{
+    transform: rotate(45deg);
+    color: #fff;
 }
 
 @media only screen and (max-width: 858px) {

@@ -4,6 +4,7 @@ import Image from "../../images/Logo-wa.png";
 import Bgimage from "../../images/bg-wrapper.jpg";
 import Carousal from "./../../Layouts/Carousal/Carousal";
 import ArrowCarousal from "./../../Layouts/ArrowCarousal/ArrowCarousal";
+import NavBar from "../../Layouts/NavBar/NavBar"
 
 import Rotation from "./../../components/Rotation/Rotation";
 
@@ -16,6 +17,7 @@ class Features extends Component {
             <img src={Image} />
           </div>
           <div className="contentBlog">
+            <NavBar/>
             <div>
               <h2>Hello. How do you do?</h2>
               <p>
@@ -48,7 +50,7 @@ class Features extends Component {
             </div>
           </div>
         </section>
-       
+      
         <section className="drumbeatBlog">
           <div className="whiteBg">
             <div className="subDrumBeat">
@@ -59,18 +61,22 @@ class Features extends Component {
               <div className="drumBeatImagesBlog">
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                  <div className="img-arrow-Round-click"><i class='fas fa-arrow-up'></i></div>
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                   <span>-By Siddhant M. | 05 mins read</span>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                  <div className="img-arrow-Round-click"><i class='fas fa-arrow-up'></i></div>
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                   <span>-By Siddhant M. | 05 mins read</span>
                 </div>
                 <div className="drumimg">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                  <div className="img-arrow-Round-click"><i class='fas fa-arrow-up'></i></div>
+                  
                   <h1>Lorem ipsum doler with site amen</h1>
                   <p>We are driven by the driven and we don't get anything.</p>
                   <span>-By Siddhant M. | 05 mins read</span>
@@ -145,14 +151,14 @@ class Features extends Component {
               We think long and hard about your business challenges and comeup with the best way to
               reach your goals.
             </p>
-            <p>
-              <i class="fas fa-phone" style={{ color: "#f814cb" }}></i> &nbsp;Contact Us : +91
+            <p style={{ color: "#f814cb" }}>
+              <i class="fas fa-phone"  style={{transform: "rotate(90deg)"}}></i> &nbsp;Contact Us : +91
               42789456
             </p>
-            <p>
+            {/* <p>
               <i class="fas fa-phone" style={{ color: "#f814cb" }}></i>{" "}
               &nbsp;Contact Us : +91 42789456
-            </p>
+            </p> */}
             {/* <p style={{color:"#f814cb"}}><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; <a href="#"/></a> </p> */}
             <p style={{ color: "#f814cb" }}>
               <i
@@ -160,7 +166,7 @@ class Features extends Component {
                 style={{ fontSize: "14px" }}
                 aria-hidden="true"
               ></i>
-              &nbsp;<u>Get Discovers</u>
+              &nbsp;<u>Get Discovers +</u>
             </p>
           </div>
           <form>
@@ -172,10 +178,10 @@ class Features extends Component {
             <input type="text" placeholder="Contact no:" />
             <ul>
               <li>
-                <input type="radio" /> &nbsp; New Business{" "}
+                <input type="radio" style={{marginTop:"10px"}} /> &nbsp; New Business{" "}
               </li>
               <li>
-                <input type="radio" /> &nbsp; Job activity
+                <input type="radio" style={{marginTop:"10px"}} /> &nbsp; Job activity
               </li>
               <li>
                 <button>SUBMIT</button>

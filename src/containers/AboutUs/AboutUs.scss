@@ -27,16 +27,38 @@
       }
     }
     .img-blog {
-      width: 30%;
+      width: 35%;
+      margin-left: -10px;
+      position: relative;
+      // margin-top: -44px;
       @media (max-width: 500px) {
         width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
       }
       img {
         height: 100%;
+        width: 100%;
+      }
+      .circle-animation {
+        // position: absolute;
+        #circle {
+          width: 438px;
+          position: absolute;
+          top: -61px;
+          left: 27px;
+
+          @media (max-width: 500px) {
+            width: 238px;
+            position: absolute;
+            top: -12px;
+            left: 27px;
+          }
+        }
       }
     }
     .text-blog {
-      width: 70%;
+      width: 50%;
       @media (max-width: 500px) {
         width: 100%;
         padding: 0 20px;
