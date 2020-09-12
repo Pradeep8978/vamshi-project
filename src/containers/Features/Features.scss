@@ -2,13 +2,13 @@
   width: 100%;
   margin: 0 auto;
   @media only screen and (max-width: 858px) {
-    width: 90%;
+    width: 100%;
   }
   .firstBlog {
     display: flex;
     flex-direction: row;
     background: #f814cb;
-    height: 360px;
+    height: 600px;
     @media only screen and (max-width: 858px) {
       display: flex;
       flex-direction: column;
@@ -18,8 +18,12 @@
     }
     .imgBlog {
       width: 40%;
+      margin-left: -113px;
+      margin-top: -50px;
       @media only screen and (max-width: 858px) {
         width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
       }
       img {
         width: 100%;
@@ -34,13 +38,22 @@
       color: #fff;
       @media only screen and (max-width: 858px) {
         width: 100%;
-        padding: 15px;
+        padding: 35px;
       }
       div {
-        font-size: 15px;
+        // font-size: 15px;
         line-height: 30px;
+        // width: 285px;
+        line-height: 30px;
+        @media only screen and (max-width: 858px) {
+          p {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+          }
+        }
       }
-      button {
+      .sec-one-btn {
         background: #30fc77;
         // color: #fff;
         padding: 10px 20px;
@@ -61,8 +74,19 @@
     }
     .img-wrapper {
       width: 50%;
+      position: relative;
+
       @media only screen and (max-width: 858px) {
         width: 100%;
+      }
+      .image-layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #2930ae;
+        opacity: 0.5;
       }
       img {
         width: 100%;
@@ -93,55 +117,89 @@
         }
 
         .step-content {
-          line-height: 30px;
+          // line-height: 30px;
           color: #f814cb;
+          letter-spacing: 2px;
+          line-height: 60px;
+          @media only screen and (max-width: 858px) {
+            font-size: 9px;
+            line-height: 30px;
+          }
         }
         .step-content-two {
           line-height: 30px;
         }
       }
       button {
-        background: green;
-        color: #fff;
-        padding: 10px 20px;
+        background: #2cf135;
+        padding: 13px 34px;
         border: none;
         outline: none;
         border-radius: 20px;
+        box-shadow: 0 7px 14px #ddd;
       }
     }
   }
+  .responsive-carousel{
+    display: none;
+  @media only screen and (max-width: 858px) {
+    display: unset;
+  }
+  }
   .drumbeatBlog {
     //   background: url("https://cdn4.vectorstock.com/i/1000x1000/93/63/green-and-yellow-glitch-background-vector-10779363.jpg");
-    background: url("../../images/152702-green-random-alphabet-letters-background-design.jpg");
+    background: url("../../images/wa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 560px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    // height: 560px;
+    // align-items: center;
+    // justify-content: center;
+    // display: flex;
+    padding: 50px;
     @media only screen and (max-width: 858px) {
-      background: green;
+      // background: green;
       height: auto;
-      padding: 5px;
+      padding: 15px;
     }
 
     .whiteBg {
       background: #fff;
-      width: 95%;
-      //   margin: 0 auto;
-      height: auto;
+      position: relative;
       .subDrumBeat {
-        padding: 20px;
+        // padding: 20px;
         position: relative;
+        padding: 75px;
+        @media only screen and (max-width: 858px) {
+          position: relative;
+          padding: 18px;
+        }
+        h2 {
+          // margin-bottom: 26px;
+          font-size: 45px;
+          font-weight: 600;
+          @media only screen and (max-width: 858px) {
+            font-size: 28px;
+          }
+        }
         .rotion-blog {
-          width: 68px;
+          width: 148px;
           position: absolute;
-          left: -18px;
-          top: -27px;
+          left: 0px;
+          top: 0px;
+          #circle text {
+            fill: blue;
+          }
+          @media only screen and (max-width: 858px) {
+            width: 74px;
+            position: absolute;
+            left: -18px;
+            top: -31px;
+          }
         }
       }
       .drumBeatImagesBlog {
         display: flex;
+        // padding: 62px;
         @media only screen and (max-width: 858px) {
           display: none;
         }
@@ -150,23 +208,48 @@
           width: 33.33%;
           text-align: start;
           padding: 20px;
+          position: relative;
           @media only screen and (max-width: 858px) {
             width: 100%;
             font-size: 10px;
             text-align: center;
           }
+          h1 {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 33px;
+          }
           img {
             width: 100%;
             // height: 100%;
           }
-          button {
-            background: #f814cb;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            outline: none;
-            border-radius: 20px;
+          .img-arrow-Round-click {
+            position: absolute;
+            width: 75px;
+            padding: 28px;
+            height: 75px;
+            border-radius: 50%;
+            right: 52px;
+            bottom: 171px;
+            background-color: #f814cb;
+            i {
+              transform: rotate(45deg);
+              color: #fff;
+            }
           }
+          span {
+            font-family: inherit;
+            color: blue;
+            line-height: 52px;
+          }
+          // button {
+          //   background: #f814cb;
+          //   color: #fff;
+          //   padding: 10px 20px;
+          //   border: none;
+          //   outline: none;
+          //   border-radius: 20px;
+          // }
         }
       }
       .carousalBlog {
@@ -176,12 +259,49 @@
           margin-top: 25px;
         }
       }
+      button {
+        position: absolute;
+        bottom: 40px;
+        right: 120px;
+        background: #f814cb;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: 0 7px 14px #ddd;
+
+        @media only screen and (max-width: 858px) {
+          display: none;
+        }
+      }
+    }
+    .viewBtnRes {
+      text-align: center;
+      button {
+        display: none;
+        background: #f814cb;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 7px 14px #ddd;
+
+        @media only screen and (max-width: 858px) {
+          display: unset;
+        }
+      }
     }
   }
   .bg-Black-container {
     background: #000;
-    // height: 200px;
+    height: 400px;
     color: #fff;
+    @media only screen and (max-width: 858px) {
+      height: auto;
+    }
     .bg-black-blog {
       display: flex;
       padding: 20px;
@@ -201,11 +321,21 @@
           width: 100%;
           border-right: none;
           padding: 0px;
+          text-align: center;
         }
         h2 {
           text-align: right;
           @media only screen and (max-width: 858px) {
             text-align: center;
+            display: none;
+          }
+        }
+        h1 {
+          display: none;
+          @media only screen and (max-width: 858px) {
+            text-align: center;
+            display: initial;
+            font-size: 30px;
           }
         }
       }
@@ -225,7 +355,7 @@
         @media only screen and (max-width: 858px) {
           display: flex;
           margin-top: 20px;
-          img{
+          img {
             width: 50%;
           }
         }
@@ -235,7 +365,7 @@
         @media only screen and (max-width: 858px) {
           display: flex;
           // margin-top: 20px;
-          img{
+          img {
             width: 50%;
           }
         }
@@ -247,11 +377,10 @@
     width: 90%;
     margin: 0 auto;
     height: 100%;
-    margin-top: -44px;
+    margin-top: -170px;
     margin-bottom: 75px;
     @media only screen and (max-width: 858px) {
-    margin-bottom: 0px;
-
+      // margin-bottom: 0px;
     }
     .wrapper-img-blog {
       width: 25%;
@@ -265,14 +394,16 @@
     }
   }
   .hang-container {
-    width: 80%;
+    width: 59%;
     margin: 0 auto;
     display: flex;
+    position: relative;
     @media only screen and (max-width: 858px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
+      padding: 10px;
     }
     div {
       width: 50%;
@@ -298,12 +429,15 @@
       .rotationcmp {
         position: absolute;
         top: -119px;
-        right: -141px;
-        width: 300px;
+        right: -34px;
+        width: 160px;
         @media only screen and (max-width: 858px) {
           top: -116px;
           right: -28px;
           width: 170px;
+        }
+        #circle text {
+          fill: blue;
         }
       }
       input {
@@ -316,11 +450,17 @@
       ul {
         display: flex;
         flex-direction: row;
+        list-style: none;
         @media only screen and (max-width: 858px) {
-          display: initial;
+          margin-bottom: 26px;
         }
         li {
           padding-right: 20px;
+          font-size: 12px;
+          @media only screen and (max-width: 858px) {
+            // padding: 10px;
+            font-size: 10px;
+          }
           button {
             background: #30fc77;
             // color: #fff;
@@ -328,8 +468,26 @@
             border: none;
             outline: none;
             border-radius: 20px;
+            display: unset;
+            @media only screen and (max-width: 858px) {
+              display: none;
+            }
           }
         }
+      }
+    }
+    button {
+      display: none;
+      @media only screen and (max-width: 858px) {
+        background: #30fc77;
+        padding: 10px 42px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        display: unset;
+        position: absolute;
+        bottom: -8px;
+        box-shadow: 0px 3px 14px #ddd;
       }
     }
   }

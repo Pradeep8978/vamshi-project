@@ -80,6 +80,15 @@
             border-bottom: 1px solid #f814cb;
             cursor: pointer;
           }
+          .checkBox{
+            display: none;
+          }
+          // input[type=checkbox]:checked ~ .demo {
+          //   display: initial;
+          // }
+          // .demo{
+          //   display: none;
+          // }
         }
       }
       .form {
@@ -132,6 +141,7 @@
       }
     }
   }
+
 }
 .end {
   background-color: #000;
@@ -139,3 +149,12 @@
   text-align: center;
   height: 75px;
 }
+
+.map-blog{
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .map-blog {
+  display: block;
+}
+
