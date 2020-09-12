@@ -29,9 +29,8 @@ const Header = () => {
           <div className="text">
             <h1>Effectiveness through influence</h1>
             <p>
-              Drog 5 is inthe bussiness of creative problem solving<br></br> from integrated
-              campaign to bussiness design<br></br> our work creates real connections with people
-              and drives results
+              Drog 5 is inthe bussiness of creative problem solving from integrated campaign to
+              bussiness design our work creates real connections with people and drives results
             </p>
           </div>
         </div>
