@@ -44,5 +44,5 @@ export default Rotation;
 
 Rotation.defaultProps = {
   size: 150,
-  text: "Minimum Work Experience Minimum work",
+  text: " WE ARE WISEAPE  .  TAG LINE COMES  .",
 };

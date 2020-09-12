@@ -7,26 +7,42 @@
     margin-top: -130px;
     margin-bottom: 20px;
     @media only screen and (max-width: 858px) {
-      width: 100%;
+      width: 96%;
     }
     .joinus-heading {
-      display: flex;
+      // display: flex;
       color: #fff;
       .heading {
-        width: 70%;
+        // width: 70%;
+        position: relative;
         h2 {
           letter-spacing: 2px;
         }
         p {
           margin-bottom: 10px;
           margin-top: 10px;
-          font-size: 17px;
+          font-size: 15px;
         }
       }
       .filterblog {
-        width: 30%;
-        text-align: end;
+        // width: 30%;
+        display: flex;
+        justify-content: space-between;
+        .first-para{
+          width: 70%;
+        }
+        .icon-blog{
+          display: flex;
+          // width: 30%;
+        }
       }
+    }
+    .joinUs-text-rotation {
+      width: 82px;
+      height: auto;
+      position: absolute;
+      left: 17%;
+      bottom: 103px;
     }
   }
   section {
@@ -57,7 +73,7 @@
       width: 70%;
       padding: 20px;
       @media only screen and (max-width: 858px) {
-        width: 50%;
+        width: 100%;
       }
       h4 {
         letter-spacing: 4px;
@@ -69,6 +85,15 @@
         margin-top: 8px;
         font-size: 12px;
         letter-spacing: 1px;
+      }
+      button {
+        background: #2cf135;
+        padding: 9px 17px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 13px;
+        box-shadow: 0 0px 12px rgba(44,253,51,0.5);
       }
     }
     .imgBlog {
@@ -84,7 +109,7 @@
       .yrs {
         position: absolute;
         right: 0px;
-        top: 70px;
+        top: 60px;
       }
       img {
         width: 70%;

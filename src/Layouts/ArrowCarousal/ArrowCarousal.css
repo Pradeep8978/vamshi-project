@@ -1,0 +1,39 @@
+
+
+.carousel-container .Carousel.Caption{
+    position: absolute;
+    right: 50%;
+    bottom: 157px;
+    top: 50%;
+}
+
+.carousel-container .carousel-inner .carousel-caption {
+    /* position: unset;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; */
+
+
+    position: unset;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* color: #fff; */
+    text-align: center;
+    color: #000;
+}
+.carousel-container .carousel-inner .carousel-caption h3{
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+.carousel-container .carousel-control-prev{
+    background: #f814cb;
+}
+.carousel-container .carousel-control-next{
+    background-color: #f814cb;
+}
