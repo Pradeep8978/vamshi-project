@@ -53,7 +53,7 @@
           }
         }
       }
-      button {
+      .sec-one-btn {
         background: #30fc77;
         // color: #fff;
         padding: 10px 20px;
@@ -139,6 +139,12 @@
         box-shadow: 0 7px 14px #ddd;
       }
     }
+  }
+  .responsive-carousel{
+    display: none;
+  @media only screen and (max-width: 858px) {
+    display: unset;
+  }
   }
   .drumbeatBlog {
     //   background: url("https://cdn4.vectorstock.com/i/1000x1000/93/63/green-and-yellow-glitch-background-vector-10779363.jpg");

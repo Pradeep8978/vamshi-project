@@ -14,7 +14,8 @@ class AboutUs extends Component {
             <div className="img-blog">
               <img src={Logo} width="100%" height="450px" />
               <div className="circle-animation">
-                <Rotation/></div>
+                <Rotation text=". &nbsp;&nbsp;WE ARE WISEAPE	&nbsp; . &nbsp;	&nbsp; TAG LINE COMES . &nbsp; &nbsp;WE ARE WISEAPE	&nbsp;  &nbsp; &nbsp;.	&nbsp; TAG LINE COMES &nbsp;&nbsp; "/>
+                </div>
             </div>
             <div className="text-blog">
               <div className="text-content">

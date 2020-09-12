@@ -39,20 +39,32 @@
       img {
         height: 100%;
         width: 100%;
+        position: absolute;
+        z-index: 9999;
+      @media (max-width: 500px) {
+        position: inherit;
+        z-index: 9999;
+
+      }
       }
       .circle-animation {
         // position: absolute;
         #circle {
           width: 438px;
           position: absolute;
-          top: -61px;
+          top: -21px;
           left: 27px;
-
+          border: 10px;
+          height: auto;
           @media (max-width: 500px) {
             width: 238px;
             position: absolute;
             top: -12px;
             left: 27px;
+          }
+          text{
+            fill: blue;
+            font-size: 8px;
           }
         }
       }

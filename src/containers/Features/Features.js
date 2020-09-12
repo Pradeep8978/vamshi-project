@@ -24,7 +24,7 @@ class Features extends Component {
                 We help brands become a real and meaningful contributor to our
                 lives.
               </p>
-              <button>See Now</button>
+              <button className="sec-one-btn">See how</button>
             </div>
           </div>
         </section>
@@ -50,7 +50,9 @@ class Features extends Component {
             </div>
           </div>
         </section>
-      
+      <section className="responsive-carousel">
+        <ArrowCarousal/>
+        </section>
         <section className="drumbeatBlog">
           <div className="whiteBg">
             <div className="subDrumBeat">
