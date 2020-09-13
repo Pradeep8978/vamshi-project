@@ -6,7 +6,7 @@ import Services from "./services/Services"
 import AboutUs from "./containers/AboutUs/AboutUs"
 import JoinUs from "./containers/JoinUs/JoinUs";
 import Features from "./containers/Features/Features"
-import Contactus from "./contact us/contactus"
+import Contactus from "./containers/contactUs/contactUs"
 const App = () => {
   return (
     <BrowserRouter>
