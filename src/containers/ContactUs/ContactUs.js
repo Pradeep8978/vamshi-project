@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import "./contactus.scss";
-import logo from "../images/wa_logo_yellow.png";
-import NavBar from "../Layouts/NavBar/NavBar";
-// import Letshang from "../services/letshang"
+import "./ContactUs.scss";
+import logo from "../../images/wa_logo_yellow.png";
+import NavBar from "../../Layouts/NavBar/NavBar";
 
-class contactus extends Component {
+class ContactUs extends Component {
   render() {
     return (
       <>
@@ -34,8 +33,10 @@ class contactus extends Component {
                 </div>
                 <div className="icon-line">
                   <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>
-                  <input type="checkbox" className="checkBox" id="map"/>
-                  <label className="directions" for="map">Get Directions +</label>
+                  <input type="checkbox" className="checkBox" id="map" />
+                  <label className="directions" for="map">
+                    Get Directions +
+                  </label>
                 </div>
               </div>
               <div className="form">
@@ -57,17 +58,17 @@ class contactus extends Component {
             </div>
           </div>
           <div className="map-blog">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.90439468704!2d78.3941416!3d17.4369123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3243b12997ac0805!2sThe%20Digital%20Street!5e0!3m2!1sen!2sin!4v1599379388627!5m2!1sen!2sin"
-            width="100%"
-            className="target"
-            height="450"
-            frameborder="0"
-            style={{ border: "0" }}
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.90439468704!2d78.3941416!3d17.4369123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3243b12997ac0805!2sThe%20Digital%20Street!5e0!3m2!1sen!2sin!4v1599379388627!5m2!1sen!2sin"
+              width="100%"
+              className="target"
+              height="450"
+              frameborder="0"
+              style={{ border: "0" }}
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
           </div>
           <div className="end">
             <p>Footer</p>
@@ -78,4 +79,4 @@ class contactus extends Component {
   }
 }
 
-export default contactus;
+export default ContactUs;

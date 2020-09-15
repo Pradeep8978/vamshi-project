@@ -14,6 +14,9 @@ class NavBar extends Component {
             <Link className="nav-link" to="/">
               Home
             </Link>
+            <Link className="nav-link" to="/works">
+              Works
+            </Link>
             <Link className="nav-link" to="/features">
               Features
             </Link>
@@ -26,7 +29,7 @@ class NavBar extends Component {
               About Us
             </Link>
             <Link className="nav-link" eventKey={2} to="contactUs">
-              Contact Us
+              Get in touch
             </Link>
             <Link className="nav-link" eventKey={2} href="#memes">
               <i class="fa fa-search search" aria-hidden="true"></i>
