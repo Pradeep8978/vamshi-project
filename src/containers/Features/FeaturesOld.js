@@ -135,16 +135,16 @@ class Features extends Component {
               We think long and hard about your business challenges and comeup with the best way to
               reach your goals.
             </p>
-            <p style={{ color: "#f81455" }}>
+            <p style={{ color: "#f814cb" }}>
               <i class="fas fa-phone" style={{ transform: "rotate(90deg)" }}></i> &nbsp;Contact Us :
               +91 42789456
             </p>
             {/* <p>
-              <i class="fas fa-phone" style={{ color: "#f81455" }}></i>{" "}
+              <i class="fas fa-phone" style={{ color: "#f814cb" }}></i>{" "}
               &nbsp;Contact Us : +91 42789456
             </p> */}
-            {/* <p style={{color:"#f81455"}}><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; <a href="#"/></a> </p> */}
-            <p style={{ color: "#f81455" }}>
+            {/* <p style={{color:"#f814cb"}}><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; <a href="#"/></a> </p> */}
+            <p style={{ color: "#f814cb" }}>
               <i class="fa fa-map-marker" style={{ fontSize: "14px" }} aria-hidden="true"></i>
               &nbsp;<u>Get Discovers +</u>
             </p>

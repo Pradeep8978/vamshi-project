@@ -10,7 +10,7 @@
   justify-content: center;
 }
 .carousal-conatiner .carousel .control-dots .dot {
-  background: #f81455;
+  background: #f814cb;
   outline: none;
   border: none;
   opacity: 1;
@@ -72,7 +72,7 @@
   border-radius: 50%;
   right: 17px;
   bottom: -20px;
-  background-color: #f81455;
+  background-color: #f814cb;
 }
 .carousal-conatiner i {
   transform: rotate(45deg);

@@ -10,7 +10,7 @@
   .firstBlog {
     display: flex;
     flex-direction: row;
-    background: #f81455;
+    background: #f814cb;
     @media only screen and (max-width: 500px) {
       display: flex;
       flex-direction: column;
@@ -161,7 +161,7 @@
               color: #fff;
               position: absolute;
               padding: 15px;
-              background-color: #f81455;
+              background-color: #f814cb;
               border-radius: 50%;
             }
           }
@@ -213,7 +213,7 @@
         float: right;
         // bottom: 40px;
         // right: 120px;
-        background: #f81455;
+        background: #f814cb;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -232,7 +232,7 @@
       text-align: center;
       button {
         display: none;
-        background: #f81455;
+        background: #f814cb;
         color: #fff;
         padding: 10px 20px;
         border: none;
