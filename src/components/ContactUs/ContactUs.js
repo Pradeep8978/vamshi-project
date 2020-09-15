@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactUs.scss";
-import Rotation from '../Rotation/Rotation.js'
+import Rotation from "../Rotation/Rotation.js";
 import logo from "../../images/wa_logo_yellow.png";
 import NavBar from "../../Layouts/NavBar/NavBar";
 
 const ContactUsComponent = () => {
+  const [showMap, setShowMap] = useState(false);
   return (
     <div className="contactus-content">
       <Rotation />
@@ -26,8 +27,8 @@ const ContactUsComponent = () => {
             <div className="icon-line">
               <i class="fa fa-map-marker map-marker" aria-hidden="true"></i>
               <input type="checkbox" className="checkBox" id="map" />
-              <label className="directions" for="map">
-                Get Directions +
+              <label className="directions" onClick={() => setShowMap(!showMap)}>
+                Get Directions <span className={`plus-icon ${showMap ? "active" : ""}`}>+</span>
               </label>
             </div>
           </div>
@@ -49,7 +50,7 @@ const ContactUsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="map-blog">
+      <div className={`map-blog ${showMap ? "active" : ""}`}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.90439468704!2d78.3941416!3d17.4369123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3243b12997ac0805!2sThe%20Digital%20Street!5e0!3m2!1sen!2sin!4v1599379388627!5m2!1sen!2sin"
           width="100%"

@@ -115,48 +115,69 @@ class Features extends Component {
             </div>
             <div className="imagesBlog-container">
               <div className="wrapper-img-blog">
-
-                <img src={require('../../images/workimages/meet3.JPG')}/>
+                <img src={require("../../images/workimages/meet3.JPG")} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
-                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
-                  </p>
-                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
-                </div>
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="wrapper-img-blog ">
-                <img src={require('../../images/workimages/meet2.jpg')} />
+                <img src={require("../../images/workimages/meet2.jpg")} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
-                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
-                  </p>
-                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
-                </div>
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="wrapper-img-blog">
-                <img src={require('../../images/workimages/meet1.JPG')} />
+                <img src={require("../../images/workimages/meet1.JPG")} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
-                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
-                  </p>
-                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
-                </div>
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="wrapper-img-blog ">
-                <img src={require('../../images/workimages/meet4.JPG')} />
+                <img src={require("../../images/workimages/meet4.JPG")} />
+                <div className="more-layer">
+                  <div className="meet-all">
+                    <i className="fas fa-arrow-up" />
+                    <div>MEET ALL</div>
+                  </div>
+                </div>
                 <div className="img_description_layer">
                   <div className="img-description-content">
-                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
-                  </p>
-                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
-                </div>
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
