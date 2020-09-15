@@ -1,82 +1,86 @@
-.carousal-conatiner{
-    /* position: relative; */
+.carousal-conatiner {
+  /* position: relative; */
 }
-.carousal-conatiner .carousel .thumbs{
-display: none;
+.carousal-conatiner .carousel .thumbs {
+  display: none;
 }
-.carousal-conatiner .carousel .control-dots{
-    position: unset;
-    display: flex;
-    justify-content: center;
+.carousal-conatiner .carousel .control-dots {
+  position: unset;
+  display: flex;
+  justify-content: center;
 }
-.carousal-conatiner .carousel .control-dots .dot{
-    background: #f814cb;
-    outline: none;
-    border: none;
-    opacity: 1;
+.carousal-conatiner .carousel .control-dots .dot {
+  background: #f814cb;
+  outline: none;
+  border: none;
+  opacity: 1;
 }
-.carousal-conatiner .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{
-    height: 12px;
-    width: 12px;
-    margin-top: -3px;
+.carousal-conatiner .carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  height: 12px;
+  width: 12px;
+  margin-top: -3px;
 }
-.carousal-conatiner .carousel.carousel-slider .control-arrow{
-display: none;
+.carousal-conatiner .carousel.carousel-slider .control-arrow {
+  display: none;
 }
-.carousal-conatiner .carousel .carousel-status{
-    display: none;
+.carousal-conatiner .carousel .carousel-status {
+  display: none;
 }
-.carousal-conatiner .carousel .slide h4{
-    font-size: 24px;
-    line-height: 35px;
-    margin-top: 20px;
+.carousal-conatiner .carousel .slide h4 {
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 20px;
 }
 .carousal-conatiner .carousel .slide .legend {
-    /* transition: all .5s ease-in-out; */
-    position: unset;
-    /* bottom: 40px; */
-    /* left: 50%; */
-     margin-left: 0; 
-    /* width: 90%; */
-    /* border-radius: 10px; */
-    background: #fff;
-    color: #000;
-    padding: 0px;
-    font-size: 14px;
-    text-align: left;
-    opacity:unset;
-    transition: unset;
-    /* line-height: 28px; */
+  /* transition: all .5s ease-in-out; */
+  position: unset;
+  /* bottom: 40px; */
+  /* left: 50%; */
+  margin-left: 0;
+  /* width: 90%; */
+  /* border-radius: 10px; */
+  background: #fff;
+  color: #000;
+  padding: 0px;
+  font-size: 14px;
+  text-align: left;
+  opacity: unset;
+  transition: unset;
+  /* line-height: 28px; */
 }
-.carousal-conatiner .carousel .slide{
-    background: #fff;
-    text-align: left;
+.carousal-conatiner .carousel .slide {
+  background: #fff;
+  text-align: left;
+}
+.carousal-conatiner .carousel .slide span {
+  font-family: inherit;
+  color: blue;
 
+  line-height: 52px;
 }
-.carousal-conatiner .carousel .slide span{
-    font-family: inherit;
-    color: blue;
-   
-    line-height: 52px;
+
+.carousal-conatiner .drumimg {
+  position: relative;
 }
 
 .carousal-conatiner .img-arrow-Round-click {
-    position: absolute;
-    width: 50px;
-    padding: 17px;
-    height: 50px;
-    border-radius: 50%;
-    right: 17px;
-    bottom: 188px;
-    background-color: #f814cb;
+  position: absolute;
+  width: 50px;
+  padding: 17px;
+  height: 50px;
+  border-radius: 50%;
+  right: 17px;
+  bottom: -20px;
+  background-color: #f814cb;
 }
-.carousal-conatiner i{
-    transform: rotate(45deg);
-    color: #fff;
+.carousal-conatiner i {
+  transform: rotate(45deg);
+  color: #fff;
 }
 
 @media only screen and (max-width: 858px) {
-    .carousal-conatiner .carousel .slide h4{
-        margin-bottom: 10px;
-    }
+  .carousal-conatiner .carousel .slide h4 {
+    margin-bottom: 10px;
+  }
 }

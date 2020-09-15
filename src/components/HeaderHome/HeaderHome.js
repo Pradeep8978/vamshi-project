@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import NavBar from "../../Layouts/NavBar/NavBar";
-import download from "./../../images/wa_logo.png";
+import download from "./../../images/Logo-wa.png";
 import "./HeaderHome.scss";
 
 const Header = () => {

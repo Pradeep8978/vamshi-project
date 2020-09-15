@@ -3,7 +3,7 @@ import logo from "../../images/wa_logo_yellow.png";
 import NavBar from "../../Layouts/NavBar/NavBar";
 // import Letshang from "../services/letshang"
 import ContactUsComonent from "../../components/ContactUs/ContactUs";
-import "./contactUs.scss";
+import "./ContactUs.scss";
 
 class contactus extends Component {
   render() {

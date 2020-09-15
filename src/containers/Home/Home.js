@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import download from "./../../images/wa_logo.png";
+import download from "./../../images/Logo-wa.png";
 import pic from "./../../images/potti.png";
 import InfoCard from "./InfoCard";
 import Rotation from "../../components/Rotation/Rotation";

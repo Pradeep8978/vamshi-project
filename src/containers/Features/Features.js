@@ -9,6 +9,7 @@ import ContactUsComponent from "./../../components/ContactUs/ContactUs";
 
 import Rotation from "./../../components/Rotation/Rotation";
 import ReactPageScroller from "react-page-scroller";
+import WorkComponent from "./Work";
 
 class Features extends Component {
   goToPage = (pageNumber) => {
@@ -31,24 +32,8 @@ class Features extends Component {
               </div>
             </div>
           </section>
-          <section className="secondBlog">
-            <div className="img-wrapper">
-              <img src="https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" />
-              <div className="image-layer"></div>
-            </div>
-            <div className="textBlog">
-              <div>
-                <p className="step-content">STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE</p>
-                <h2>
-                  #LoveImporttwo-
-                  <br />1 Love Both, 200Dates
-                </h2>
-                <p className="step-content-two">
-                  We help brands become a real and meaningful contributor to our lives.
-                </p>
-                <button>See Now</button>
-              </div>
-            </div>
+          <section>
+            <WorkComponent />
           </section>
           {/* <section className="responsive-carousel">
             <ArrowCarousal />
@@ -95,8 +80,8 @@ class Features extends Component {
                 </div>
                 <div className="carousalBlog">
                   <Carousal />
+                  <button>view all items</button>
                 </div>
-                <button>view all items</button>
               </div>
             </div>
             <div className="viewBtnRes">
