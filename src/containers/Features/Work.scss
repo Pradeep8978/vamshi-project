@@ -11,7 +11,8 @@
   .img-wrapper {
     width: 50%;
     position: relative;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     @media only screen and (max-width: 858px) {
       width: 100%;
     }
@@ -21,7 +22,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: #2930ae;
+      // background: #2930ae;
       opacity: 0.5;
     }
     .nav-buttons {
@@ -100,17 +101,101 @@
     }
   }
   .video-player {
-    max-width: 500px;
+    max-width: 90%;
+    max-height: 500px;
   }
+}
+.player-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 .video-modal {
   .modal-dialog {
-    max-width: 800px;
+    max-height: 500px;
     .modal-body {
       padding: 0;
+      width: 1000px;
+      height: 400px;
       .video-player {
         width: 100%;
+      }
+    }
+    @media only screen and (min-width: 320px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        height: 100px;
+        width: 300px;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 375px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        height: 170px;
+        width: 360px;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 500px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        height: 200px;
+        width: 500px;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        height: 300px;
+        width:760px;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        width: 1000px;
+        height: 100%;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 1400px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        width: 1390px;
+        height: 100%;
+        .video-player {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (min-width: 2500px) {
+      .modal-body {
+        padding: 0;
+        margin:auto;
+        width: 2000px;
+        height: 100%;
+        .video-player {
+          width: 100%;
+        }
       }
     }
   }
