@@ -120,7 +120,7 @@ class Features extends Component {
                 <div className="img_description_layer">
                   <div className="img-description-content">
                   <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  <div style={{backgroundColor:'#f81455'}}>Sushant Shrike</div>
                   </p>
                   <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
                 </div>
@@ -131,7 +131,7 @@ class Features extends Component {
                 <div className="img_description_layer">
                   <div className="img-description-content">
                   <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  <div style={{backgroundColor:'#f81455'}}>Sushant Shrike</div>
                   </p>
                   <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
                 </div>
@@ -142,7 +142,7 @@ class Features extends Component {
                 <div className="img_description_layer">
                   <div className="img-description-content">
                   <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  <div style={{backgroundColor:'#f81455'}}>Sushant Shrike</div>
                   </p>
                   <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
                 </div>
@@ -153,7 +153,7 @@ class Features extends Component {
                 <div className="img_description_layer">
                   <div className="img-description-content">
                   <p className="img_description">We are driven by the driven and we don't let anything get in the way.
-                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  <div style={{backgroundColor:'#f81455'}}>Sushant Shrike</div>
                   </p>
                   <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
                 </div>
