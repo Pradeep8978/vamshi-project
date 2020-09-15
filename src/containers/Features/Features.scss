@@ -368,7 +368,19 @@
     /* transition effect. not necessary */
     // transition: opacity .2s, visibility .2s;
   }
-  
+  .wrapper-img-blog.img_wrap {
+    top: 0;
+    backface-visibility: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-blend-mode: overlay;
+    background: rgba(36, 62, 206, 0.6);
+    opacity: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .wrapper-img-blog:hover .img_description_layer {
     visibility: visible;
     opacity: 1;

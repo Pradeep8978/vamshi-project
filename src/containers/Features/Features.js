@@ -114,7 +114,7 @@ class Features extends Component {
               </div>
             </div>
             <div className="imagesBlog-container">
-              <div className="wrapper-img-blog img_wrap">
+              <div className="wrapper-img-blog">
 
                 <img src={require('../../images/workimages/meet3.JPG')}/>
                 <div className="img_description_layer">
@@ -126,7 +126,7 @@ class Features extends Component {
                 </div>
                 </div>
               </div>
-              <div className="wrapper-img-blog img_wrap">
+              <div className="wrapper-img-blog ">
                 <img src={require('../../images/workimages/meet2.jpg')} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
@@ -137,7 +137,7 @@ class Features extends Component {
                 </div>
                 </div>
               </div>
-              <div className="wrapper-img-blog img_wrap">
+              <div className="wrapper-img-blog">
                 <img src={require('../../images/workimages/meet1.JPG')} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
@@ -148,7 +148,7 @@ class Features extends Component {
                 </div>
                 </div>
               </div>
-              <div className="wrapper-img-blog img_wrap">
+              <div className="wrapper-img-blog ">
                 <img src={require('../../images/workimages/meet4.JPG')} />
                 <div className="img_description_layer">
                   <div className="img-description-content">
