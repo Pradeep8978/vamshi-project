@@ -1,0 +1,30 @@
+.contactus-container {
+  .header {
+    background-color: #f814cb;
+    img {
+      height: 75px;
+      margin-left: 10px;
+    }
+    .icon-position {
+      float: right;
+      color: #f1fd42;
+      margin: 18px;
+      padding: 10px;
+      .expand {
+        padding-left: 13px;
+      }
+      .search {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.end {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  height: 75px;
+}
+
+
+
