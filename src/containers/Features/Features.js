@@ -115,16 +115,49 @@ class Features extends Component {
             </div>
             <div className="imagesBlog-container">
               <div className="wrapper-img-blog">
-                <img src="https://image1.masterfile.com/getImage/ODc3LTA4MTI5NDM3ZW4uMDAwMDAwMDA=AEnoCK/877-08129437en_Masterfile.jpg" />
+
+                <img src={require('../../images/workimages/meet3.JPG')}/>
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
+                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  </p>
+                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
+                </div>
+                </div>
+              </div>
+              <div className="wrapper-img-blog ">
+                <img src={require('../../images/workimages/meet2.jpg')} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
+                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  </p>
+                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
+                </div>
+                </div>
               </div>
               <div className="wrapper-img-blog">
-                <img src="https://i.pinimg.com/474x/ea/27/0d/ea270d4d381838c06c5b004edfe64950.jpg" />
+                <img src={require('../../images/workimages/meet1.JPG')} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
+                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  </p>
+                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
+                </div>
+                </div>
               </div>
-              <div className="wrapper-img-blog">
-                <img src="https://image.freepik.com/free-photo/beautiful-business-woman-blue-suit-is-smiling-white-background_33799-2639.jpg" />
-              </div>
-              <div className="wrapper-img-blog">
-                <img src="https://i.pinimg.com/originals/10/17/23/1017230f6ed9a3ecdbb65ea9494bdc58.jpg" />
+              <div className="wrapper-img-blog ">
+                <img src={require('../../images/workimages/meet4.JPG')} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                  <p className="img_description">We are driven by the driven and we don't let anything get in the way.
+                  <div style={{backgroundColor:'#f814cb'}}>Sushant Shrike</div>
+                  </p>
+                  <Rotation fill="" text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;" />
+                </div>
+                </div>
               </div>
             </div>
           </section>

@@ -1,11 +1,13 @@
 import React from "react";
 import "./ContactUs.scss";
+import Rotation from '../Rotation/Rotation.js'
 import logo from "../../images/wa_logo_yellow.png";
 import NavBar from "../../Layouts/NavBar/NavBar";
 
 const ContactUsComponent = () => {
   return (
     <div className="contactus-content">
+      <Rotation />
       <div className="text-form-container ">
         <div className="text-form">
           <div className="text">
