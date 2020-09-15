@@ -8,9 +8,9 @@ const ContactUsComponent = () => {
   const [showMap, setShowMap] = useState(false);
   return (
     <div className="contactus-content">
-      <Rotation />
       <div className="text-form-container ">
         <div className="text-form">
+          <Rotation />
           <div className="text">
             <h1>LET'S HANG</h1>
             <p>
