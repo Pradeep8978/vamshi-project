@@ -12,8 +12,14 @@ const Header = () => {
       scroll = Math.floor(window.pageYOffset);
       if (scroll > 0) {
         pageHeader.classList.add("page-header--scrolled");
+        // setTimeout(() => {
+        //   pageHeader.classList.add("fixed");
+        // }, 1000);
       } else {
         pageHeader.classList.remove("page-header--scrolled");
+        // setTimeout(() => {
+        //   pageHeader.classList.remove("fixed");
+        // }, 1000);
       }
     });
   }, []);

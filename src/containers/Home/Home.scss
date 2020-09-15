@@ -63,7 +63,7 @@
           // padding-right: 15%;
           h3 {
             letter-spacing: 3px;
-            color: deeppink;
+            color: #f814cb;
             font-size: 14px;
             margin: 0;
             font-weight: 400;
@@ -84,11 +84,12 @@
             margin: 15px 0;
           }
           button {
-            padding: 10px 26px;
+            padding: 10px 30px;
             border: none;
             background: #2afd78;
-            border-radius: 16px;
-            font-family: "Poppins", sans-serif;
+            border-radius: 25px;
+            font-weight: bold;
+            // font-family: "Poppins", sans-serif;
             outline: none;
           }
         }

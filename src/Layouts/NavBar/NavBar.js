@@ -17,14 +17,11 @@ class NavBar extends Component {
             <Link className="nav-link" to="/works">
               Works
             </Link>
-            <Link className="nav-link" to="/features">
-              Features
-            </Link>
           </Nav>
           <Nav>
-            <Link className="nav-link" to="joinUs">
+            {/* <Link className="nav-link" to="joinUs">
               Join Us
-            </Link>
+            </Link> */}
             <Link className="nav-link" eventKey={2} to="aboutUs">
               About Us
             </Link>

@@ -1,31 +1,48 @@
-import React, { Component } from 'react'
-import './Header.css'
-import Logo from "../../images/Logo-wa.png"
-import Navbar from "../.././Layouts/NavBar/NavBar"
-class Header extends Component {
-    render() {
-        return (
-            <div>
-                <nav className="navigation">
-      {/* <input type="checkbox" id="check" />
-      <label for="check" className="checkbtn">
-        <i className="fas fa-bars"></i>
-      </label> */}
-      <label className="logo">
-       <img src={Logo}  width="80px" height="50px"/>
-      </label>
-      {/* <ul>
-        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fas fa-expand"></i></a></li>
-      </ul> */}
-      <div className="navbarblog">
-      <Navbar/>
-      </div>
-    </nav>
-    <section className="bg-wrapper"></section>
-            </div>
-        )
-    }
-}
+import React, { useEffect } from "react";
+import NavBar from "../../Layouts/NavBar/NavBar";
+import download from "./../../images/Logo-wa.png";
+import "./Header.scss";
+
+const Header = () => {
+  useEffect(() => {
+    var pageHeader = document.querySelector(".page-header");
+    var scroll = 0;
+
+    window.addEventListener("scroll", function () {
+      scroll = Math.floor(window.pageYOffset);
+      if (scroll > 0) {
+        pageHeader.classList.add("page-header--scrolled");
+        // setTimeout(() => {
+        //   pageHeader.classList.add("fixed");
+        // }, 1000);
+      } else {
+        pageHeader.classList.remove("page-header--scrolled");
+        // setTimeout(() => {
+        //   pageHeader.classList.remove("fixed");
+        // }, 1000);
+      }
+    });
+  }, []);
+
+  return (
+    <div className="home-header">
+      <header class="page-header">
+        <NavBar />
+        <div className="logo">
+          <img src={download}></img>
+        </div>
+        <div className="header-right">
+          <div className="text">
+            <h1>Effectiveness through influence</h1>
+            <p>
+              Drog 5 is inthe bussiness of creative problem solving from integrated campaign to
+              bussiness design our work creates real connections with people and drives results
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
+};
 
 export default Header;
