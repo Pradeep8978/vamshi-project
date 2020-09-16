@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import NavBar from "../../Layouts/NavBar/NavBar";
+import NavBar from "../../Layouts/NavBar/NavBar.js";
 import download from "./../../images/Logo-wa.png";
 import "./Header.scss";
 

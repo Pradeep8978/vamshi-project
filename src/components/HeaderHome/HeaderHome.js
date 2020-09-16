@@ -4,30 +4,30 @@ import download from "./../../images/Logo-wa.png";
 import "./HeaderHome.scss";
 
 const Header = () => {
-  useEffect(() => {
-    var pageHeader = document.querySelector(".page-header");
-    var scroll = 0;
+  // useEffect(() => {
+  //   var pageHeader = document.querySelector(".page-header");
+  //   var scroll = 0;
 
-    window.addEventListener("scroll", function () {
-      scroll = Math.floor(window.pageYOffset);
-      if (scroll > 0) {
-        pageHeader.classList.add("page-header--scrolled");
-        // setTimeout(() => {
-        //   pageHeader.classList.add("fixed");
-        // }, 1000);
-      } else {
-        pageHeader.classList.remove("page-header--scrolled");
-        // setTimeout(() => {
-        //   pageHeader.classList.remove("fixed");
-        // }, 1000);
-      }
-    });
-  }, []);
+  //   window.addEventListener("scroll", function () {
+  //     scroll = Math.floor(window.pageYOffset);
+  //     if (scroll > 0) {
+  //       pageHeader.classList.add("page-header--scrolled");
+  //       // setTimeout(() => {
+  //       //   pageHeader.classList.add("fixed");
+  //       // }, 1000);
+  //     } else {
+  //       pageHeader.classList.remove("page-header--scrolled");
+  //       // setTimeout(() => {
+  //       //   pageHeader.classList.remove("fixed");
+  //       // }, 1000);
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="home-header">
-      <header class="page-header">
-        <NavBar />
+      <header class="page-header" style ={{backgroundColor: 'blue', }}>
+        {/* <NavBar /> */}
         <div className="logo">
           <img src={download}></img>
         </div>

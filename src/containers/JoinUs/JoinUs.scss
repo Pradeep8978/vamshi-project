@@ -30,7 +30,7 @@
       .heading {
         // width: 70%;
         position: relative;
-        z-index: 10;
+        // z-index: 10;
         .join-us {
           letter-spacing: 2px;
           position: relative;
@@ -88,7 +88,7 @@
     .imgBlog {
       #circle {
         margin: 20px 0 0 20px;
-        z-index: 999;
+        z-index: 2;
       }
     }
     &:nth-child(even) {
@@ -142,9 +142,10 @@
       padding: 20px;
       @media only screen and (max-width: 858px) {
         width: 100%;
+        text-align: center;
       }
       h4 {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-family: revert;
         font-weight: 600;
         font-size: 14px;
@@ -175,6 +176,9 @@
       // &:nth-child(odd){
       //   background-color: #f814cb;
       // }
+      @media only screen and (max-width: 858px) {
+        margin-bottom: 10px;
+      }
 
       .yrs {
         position: absolute;
