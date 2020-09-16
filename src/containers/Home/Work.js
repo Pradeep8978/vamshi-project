@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import  {Link }from 'react-router-dom'
 
 import "./Work.scss";
-import Carousal from "./../../Layouts/Carousal/Carousal";
+import Carousal from "../../Layouts/Carousal/Carousal";
 
 const videoConfig = [
   {

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./Features.scss";
+import "./Home.scss";
 
-import Carousal from "./../../Layouts/Carousal/Carousal";
-import ArrowCarousal from "./../../Layouts/ArrowCarousal/ArrowCarousal";
+import Carousal from "../../Layouts/Carousal/Carousal";
+import ArrowCarousal from "../../Layouts/ArrowCarousal/ArrowCarousal";
 
-import Rotation from "./../../components/Rotation/Rotation";
-import FeaturesHeader from "./FeaturesHeader";
+import Rotation from "../../components/Rotation/Rotation";
+import FeaturesHeader from "./HomeHeader";
 
 class Features extends Component {
   render() {
