@@ -10,15 +10,30 @@ import ContactUsComponent from "./../../components/ContactUs/ContactUs";
 import Rotation from "./../../components/Rotation/Rotation";
 import ReactPageScroller from "react-page-scroller";
 import WorkComponent from "./Work";
+import StepIndicator from "../../components/StepIndicator/StepIndicator";
 
 class Features extends Component {
+  state = {
+    pageNumber: 0,
+  };
   goToPage = (pageNumber) => {
     this.reactPageScroller.goToPage(pageNumber);
+  };
+  pageOnChange = (pageNumber) => {
+    this.setState({
+      pageNumber,
+    });
   };
   render() {
     return (
       <main className="features-container">
-        <ReactPageScroller ref={(c) => (this.reactPageScroller = c)}>
+        <StepIndicator pageNumber={this.state.pageNumber} pageOnChange={this.pageOnChange} />
+        <ReactPageScroller
+          // ref={(c) => (this.reactPageScroller = c)}
+          className="page-scroller"
+          pageOnChange={this.pageOnChange}
+          customPageNumber={this.state.pageNumber}
+        >
           <section className="firstBlog">
             <div className="imgBlog">
               <img src={Image} />
@@ -55,7 +70,7 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
                   </div>
                   <div className="drumimg-card">
                     <div className="drumimg">
@@ -65,7 +80,7 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Aditya A. | 05 mins read</span>
                   </div>
                   <div className="drumimg-card">
                     <div className="drumimg">
@@ -75,18 +90,21 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
                   </div>
+                  
                 </div>
+                <div className="viewBtnRes">
+              <button>VIEW ALL ARTICLES</button>
+             
+            </div>
                 <div className="carousalBlog">
                   <Carousal />
                   <button>view all items</button>
                 </div>
               </div>
             </div>
-            <div className="viewBtnRes">
-              <button>view all items</button>
-            </div>
+            
           </section>
           <section className="bg-Black-container">
             <div className="bg-black-blog">
@@ -98,10 +116,8 @@ class Features extends Component {
               </div>
               <div className="text-wrapper-blog">
                 <div>
-                  We think long and hard about your business challenges and comeup with the best way
-                  to reach your goals. Thn we develop strategies. We think long and hard about your
-                  business challenges and comeup with the best way to reach your goals. Thn we
-                  develop strategies.
+                   If you're the kind of person wants to inspire postive change, if is to think inside the box and is 
+                   and is looking for opportunity  to take change you're checking out an agency that you should part of.
                 </div>
               </div>
               <div className="responsive-images-blog">

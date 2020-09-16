@@ -35,32 +35,32 @@ const Header = () => {
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="">
-                Home
+                home
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">
-                About
+                about
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">
-                Services
+                services
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">
-                Portfolio
+                portfolio
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">
-                Team
+                team
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">
-                Contact Us
+                contact Us
               </a>
             </li>
           </ul>

@@ -10,7 +10,7 @@ const ContactUsComponent = () => {
     <div className="contactus-content">
       <div className="text-form-container ">
         <div className="text-form">
-          <Rotation />
+          <Rotation text=". &nbsp;	&nbsp; TAG LINE COMES  .	&nbsp; TAG LINE COMES &nbsp;"/>
           <div className="text">
             <h1>LET'S HANG</h1>
             <p>
@@ -39,10 +39,10 @@ const ContactUsComponent = () => {
               <input type="number" id="contact" placeholder="Contact no.:"></input>
               <div className="radio">
                 <div className="radio-op">
-                  <input type="radio" id="radio" value="New business"></input>&nbsp;New business
+                  <input type="radio" id="radio" name="bussiness" value="New business"></input>&nbsp;New business
                 </div>
                 <div className="radio-op">
-                  <input type="radio" id="radio" value="Job enqiury"></input>&nbsp;Job enqiury
+                  <input type="radio" id="radio" name="bussiness" value="Job enqiury"></input>&nbsp;Job enqiury
                 </div>
                 <button>Submit</button>
               </div>

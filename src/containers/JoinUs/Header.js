@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="home-header">
+    <div className="joinus-header">
       <header class="page-header">
         <NavBar />
         <div className="logo">
