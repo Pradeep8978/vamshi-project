@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "./Header";
+import HeaderSticky from '../../components/Headersticky/HeaderSticky.js'
 import "./JoinUs.scss";
 // import Yellowimg from "./../../images/Annotation 2020-09-03 132008.png";
 // import Pinkimg from "./../../images/Annotation 2020-09-03 132111.png";
@@ -17,7 +17,7 @@ class JoinUs extends Component {
     return (
       <>
         <main className="joinus-main">
-          <NavBar />
+          <HeaderSticky bgColor ='#f814cb'/>
           <section className="bg-wrapper"></section>
           <div className="join-us-container">
             <div className="joinus-heading">

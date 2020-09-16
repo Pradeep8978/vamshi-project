@@ -4,7 +4,7 @@ import NavBar from '../../Layouts/NavBar/NavBar';
 import logo from '../../images/Logo-wa.png'
 import { Link } from "react-router-dom";
 
-export default () => {
+const  HeaderSticky = (props) => {
   const [isSticky, setSticky] = useState(false);
   const ref = useRef(null);
   const handleScroll = () => {
@@ -23,7 +23,7 @@ export default () => {
 
   return (
     <Fragment>
-      <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
+      <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} style={{backgroundColor: props.bgColor}} ref={ref}>
         <div className='logo'>
         <img src ={logo}/>
         </div>  
@@ -33,3 +33,5 @@ export default () => {
     </Fragment>
   );
 };
+
+export default HeaderSticky;
