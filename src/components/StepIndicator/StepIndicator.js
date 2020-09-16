@@ -4,7 +4,7 @@ import "./StepIndicator.scss";
 const StepIndicator = ({ pageNumber, pageOnChange }) => {
   return (
     <div className="step-indicator">
-      {Array(4)
+      {Array(5)
         .fill(null)
         .map((_, index) => {
           return (

@@ -91,9 +91,9 @@
     // height: 560px;
     // align-items: center;
     // justify-content: center;
-    // display: flex;
-    padding: 40px;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px;
     @media only screen and (max-width: 500px) {
       // background: green;
       height: auto;
@@ -108,7 +108,7 @@
       .subDrumBeat {
         // padding: 20px;
         position: relative;
-        padding: 35px;
+        padding: 35px 50px;
         @media only screen and (max-width: 500px) {
           position: relative;
           padding: 18px;
@@ -150,6 +150,12 @@
           text-align: start;
           padding: 0 40px;
           position: relative;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
           @media only screen and (max-width: 500px) {
             width: 100%;
             font-size: 10px;
@@ -243,21 +249,18 @@
       margin-top: 30px;
       text-align: right;
       @media only screen and (max-width: 500px) {
-          display: none;
+        display: none;
       }
       button {
         background: #f814cb;
         color: #fff;
-        
+
         padding: 10px 23px;
         border: none;
         outline: none;
         border-radius: 20px;
-      
+
         box-shadow: 0 0px 14px rgba(248, 20, 203, 0.5);
-      
-
-
       }
     }
   }
@@ -309,12 +312,10 @@
         }
       }
       .text-wrapper-blog {
-        width: 40%;
-        padding: 0 ;
-        margin: 0;
-        font-size: 14px;
-        letter-spacing: 1.2px;
-        line-height: 1.8;
+        width: 50%;
+        padding: 0 20px;
+        font-size: 13px;
+        letter-spacing: 1.5px;
         margin: auto;
         @media only screen and (max-width: 500px) {
           width: 100%;
@@ -375,16 +376,25 @@
           justify-content: center;
           align-items: center;
           .meet-all {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             i {
-              padding: 20px;
+              // padding: 20px;
+              width: 45px;
+              height: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
               color: #fff;
               border-radius: 50%;
               transform: rotate(45deg);
-              /* font-size: 13px; */
               background-color: #f814cb;
               box-shadow: 0 0 20px rgba(248, 20, 203, 0.4);
               margin-bottom: 10px;
-              margin-left: 5px;
+              cursor: pointer;
+              // margin-left: 5px;
             }
             div {
               color: #000;
@@ -477,6 +487,11 @@
       align-items: center;
       width: 100%;
       padding: 10px;
+    }
+    .contactus-content {
+      .text-form {
+        width: 80%;
+      }
     }
   }
   footer {

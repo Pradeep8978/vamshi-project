@@ -159,6 +159,7 @@
 .map-blog {
   display: none;
   &.active {
+    margin-top: 20px;
     display: block;
   }
 }
