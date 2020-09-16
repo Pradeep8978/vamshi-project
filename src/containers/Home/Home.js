@@ -137,7 +137,14 @@ const Home = () => {
             {videoConfig.map((item) => {
               return (
                 <div className="work-item">
+                  <div className="work-item-hover">
                   <img src={item.image}></img>
+                  <div className="more-layer">
+                  <div className="meet-all">
+                  <i class="fas fa-play" aria-hidden="true" onClick={()=> onClickSeeHow(item)}></i>
+                  </div>
+                </div>
+                </div>
                   <h3>
                     DIGITAL ACTIVATION<br></br>ENGAGES BIG
                   </h3>
