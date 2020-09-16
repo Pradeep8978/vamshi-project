@@ -93,7 +93,7 @@
     // justify-content: center;
     // display: flex;
     padding: 40px;
-    height: 110%;
+    height: 100%;
     @media only screen and (max-width: 500px) {
       // background: green;
       height: auto;
@@ -242,9 +242,13 @@
     .viewBtnRes {
       margin-top: 30px;
       text-align: right;
+      @media only screen and (max-width: 500px) {
+          display: none;
+      }
       button {
         background: #f814cb;
         color: #fff;
+        
         padding: 10px 23px;
         border: none;
         outline: none;
@@ -253,16 +257,13 @@
         box-shadow: 0 0px 14px rgba(248, 20, 203, 0.5);
       
 
-        @media only screen and (max-width: 500px) {
-          display: unset;
-        }
+
       }
     }
   }
   .bg-Black-container {
     background: #000;
     height: 400px;
-    margin-top: 60px;
     color: #fff;
     @media only screen and (max-width: 500px) {
       height: auto;
