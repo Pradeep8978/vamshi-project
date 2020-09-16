@@ -9,6 +9,7 @@ import ReactPlayer from "react-player";
 import Rotation from "../../components/Rotation/Rotation";
 import NavBar from "../../Layouts/NavBar/NavBar";
 import Header from "./../../components/HeaderHome/HeaderHome";
+import HeaderSticky from "../../components/Headersticky/HeaderSticky";
 
 const videoConfig = [
   {
@@ -116,7 +117,9 @@ const Home = () => {
   };
   return (
     <div className="home-page">
-      <Header />
+    
+        <HeaderSticky/>
+        <Header />
       <div className="page-content">
         {renderModal()}
         <div className="card-container">

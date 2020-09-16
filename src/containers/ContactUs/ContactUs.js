@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../images/wa_logo_yellow.png";
+import logo from "../../images/Logo-wa.png";
 import NavBar from "../../Layouts/NavBar/NavBar";
 // import Letshang from "../services/letshang"
 import ContactUsComonent from "../../components/ContactUs/ContactUs";
