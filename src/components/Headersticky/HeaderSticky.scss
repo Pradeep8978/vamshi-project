@@ -12,7 +12,7 @@
   .sticky {
     position: sticky;
     top: 0;
-    z-index: 999999; 
+    z-index: 100; 
     padding-bottom: 10px;
     background-color: blue;/* this is optional and should be different for every project */
     .logo img {
