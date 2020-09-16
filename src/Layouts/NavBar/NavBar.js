@@ -12,21 +12,20 @@ class NavBar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Link className="nav-link" to="/">
-              home .
+              home <span className="NavDot"><i class="fa fa-circle" aria-hidden="true"></i></span>
             </Link>
             <Link className="nav-link" to="/works">
-              works .
+              works <span className="NavDot"><i class="fa fa-circle" aria-hidden="true"></i></span>
             </Link>
-          </Nav>
-          <Nav>
+
             {/* <Link className="nav-link" to="joinUs">
               Join Us
             </Link> */}
             <Link className="nav-link" eventKey={2} to="aboutUs">
-              about Us .
+              about Us <span className="NavDot"><i class="fa fa-circle" aria-hidden="true"></i></span>
             </Link>
             <Link className="nav-link" eventKey={2} to="contactUs">
-              get in touch .
+              get in touch <span className="NavDot"><i class="fa fa-circle" aria-hidden="true"></i></span>
             </Link>
             <Link className="nav-link" eventKey={2} href="#memes">
               <i class="fa fa-search search" aria-hidden="true"></i>

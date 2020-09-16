@@ -4,18 +4,29 @@
   top: 0;
   background-color: transparent !important;
   justify-content: flex-end;
+  
   .navbar-collapse {
     &.show {
-      background-color: blue;
+      background-color: #f814cb;
       padding: 10px;
     }
   }
+  .nav-bar-dark .navbar-toggler-icon {
+    background-image: url('../../images/expand.png') !important;
+}
   .navbar-nav {
     .nav-link {
       font-size:14px;
       font-weight: 700;
-
-      color: #fff;
+      color: #fff; 
+      .NavDot {
+        padding-left: 3px;
+        text-align: center;
+        i{
+          color: white;
+          font-size: 6px
+        }
+      }
       &:active,
       &:hover {
         // text-decoration: underline;
@@ -26,6 +37,9 @@
             width: fit-content; 
         text-underline-position: under;
         color: #fdfc57;
+        i{
+          color:#fdfc57
+        }
       }
       i {
         color: #fdfc57;

@@ -5,6 +5,7 @@
       width: 100vw;
       // height: auto;
       transition: 1s;
+      background-color: blue;
 
       &--scrolled {
         height: 70px;
@@ -93,10 +94,25 @@
             outline: none;
           }
         }
+        @media screen and (max-width: 500px ) {
+          .card-content {
+            width: 100%;
+            flex-direction: row;;
+          }
+        }
         .imgbox {
           width: 45%;
           img {
             width: 100%;
+          }
+        }
+        @media screen and (max-width: 500px){
+          .imgbox  {
+            width: 100%;
+          }
+          img {
+            width: 90%;
+            padding:10px
           }
         }
       }
@@ -193,6 +209,11 @@
           h1 {
             font-size: 20px;
             line-height: 1.2;
+          }
+        }
+        @media screen and (max-width: 500px) {
+          .work-item {
+            width: 100%;
           }
         }
       }
