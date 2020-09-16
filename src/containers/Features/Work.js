@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import ReactPlayer from "react-player";
+import  {Link }from 'react-router-dom'
 
 import "./Work.scss";
 import Carousal from "./../../Layouts/Carousal/Carousal";
@@ -122,11 +123,15 @@ const WorkComponent = () => {
             <div className="secondBlog">
               <div className="img-wrapper" style={{ backgroundImage: `url(${item.image})` }}>
                 <div className="image-layer"></div>
+                <div className="viewWorkBtn"> <Link className="nav-link" to="/works">
+               View All Work
+            </Link></div>
                 <div className="nav-buttons">
                   <i class="fa fa-chevron-left" aria-hidden="true" onClick={onDecrement}></i>
                   <i class="fa fa-chevron-right" aria-hidden="true" onClick={onIncrement}></i>
                 </div>
               </div>
+    
               <div className="textBlog">
                 <div>
                   <p className="step-content"> {item.step}</p>
@@ -137,6 +142,7 @@ const WorkComponent = () => {
                   </h2>
                   <p className="step-content-two">{item.description}</p>
                   <button onClick={() => onClickButton(item)}>SEE HOW</button>
+                  <p className="nextVideo"> Next #{item.name}</p>
                 </div>
               </div>
             </div>

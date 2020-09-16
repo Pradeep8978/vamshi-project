@@ -12,9 +12,19 @@
   }
   .navbar-nav {
     .nav-link {
+      font-size:14px;
+      font-weight: 700;
+
       color: #fff;
       &:active,
       &:hover {
+        // text-decoration: underline;
+        text-decoration-color: navy;
+        padding-bottom: 2px; 
+            border-bottom-style: solid; 
+            border-bottom-width: 2px; 
+            width: fit-content; 
+        text-underline-position: under;
         color: #fdfc57;
       }
       i {
