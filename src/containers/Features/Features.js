@@ -30,6 +30,7 @@ class Features extends Component {
         <StepIndicator pageNumber={this.state.pageNumber} pageOnChange={this.pageOnChange} />
         <ReactPageScroller
           // ref={(c) => (this.reactPageScroller = c)}
+          className="page-scroller"
           pageOnChange={this.pageOnChange}
           customPageNumber={this.state.pageNumber}
         >
