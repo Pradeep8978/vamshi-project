@@ -1,166 +1,211 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import "./Home.scss";
-import download from "./../../images/Logo-wa.png";
-import pic from "./../../images/potti.png";
-import InfoCard from "./InfoCard";
-import { Modal, Button } from "react-bootstrap";
-import ReactPlayer from "react-player";
+import Image from "../../images/Logo-wa.png";
+import Bgimage from "../../images/bg-wrapper.jpg";
+import Carousal from "../../Layouts/Carousal/Carousal";
+import ArrowCarousal from "../../Layouts/ArrowCarousal/ArrowCarousal";
+import NavBar from "../../Layouts/NavBar/NavBar";
+import ContactUsComponent from "../../components/ContactUs/ContactUs";
 
 import Rotation from "../../components/Rotation/Rotation";
-import NavBar from "../../Layouts/NavBar/NavBar";
-import Header from "./../../components/HeaderHome/HeaderHome";
-import HeaderSticky from "../../components/Headersticky/HeaderSticky";
+import ReactPageScroller from "react-page-scroller";
+import WorkComponent from "./Work";
+import StepIndicator from "../../components/StepIndicator/StepIndicator";
 
-const videoConfig = [
-  {
-    name: "Axis - Do Your Home Work",
-    image: require("../../images/workimages/axis.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=g0Y3opLVAc0",
-  },
-  {
-    name: "British Council - IELTS Prep App",
-    image: require("../../images/workimages/darkfantasy.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=1HSZPnv5_W8&t=25s",
-  },
-  {
-    name: "Dark Fantasy - Lot Can Happen  Inside",
-    image: require("../../images/workimages/dhl.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=nKx1Pu6mzKQ&t=15s",
-  },
-  {
-    name: "DHL - Chant for Teams",
-    image: require("../../images/workimages/engage1.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=q6GH6IgcUDA&t=13s",
-  },
-  {
-    name: "Engage - Blind Dating Booth",
-    image: require("../../images/workimages/toffel.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=bQv2MgFniig&t=15s",
-  },
-  {
-    name: "Engage - Pocket Full Of Stories 2.0",
-    image: require("../../images/workimages/engage2.JPG"),
-    step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: "#LoveImporttwo-",
-    heading2: "1 Love Both, 200Dates",
-    description: "We help brands become a real and meaningful contributor to our lives.",
-    video: "https://www.youtube.com/watch?v=rBmcCRrf5ZU",
-  },
-];
-
-const Home = () => {
-  const [show, setShow] = useState(false);
-  const [selectedItem, setSelectedItem] = useState({});
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const onClickSeeHow = (item) => {
-    setSelectedItem(item);
-    handleShow();
+class Features extends Component {
+  state = {
+    pageNumber: 0,
   };
-
-  const onIncrement = () => {
-    if (selectedIndex < videoConfig.length - 1) {
-      setSelectedIndex(selectedIndex + 1);
-    }
+  goToPage = (pageNumber) => {
+    this.reactPageScroller.goToPage(pageNumber);
   };
-
-  const onDecrement = () => {
-    if (selectedIndex > 0) {
-      setSelectedIndex(selectedIndex - 1);
-    }
+  pageOnChange = (pageNumber) => {
+    this.setState({
+      pageNumber,
+    });
   };
-
-  const renderModal = () => {
+  render() {
     return (
-      <Modal show={show} onHide={handleClose} className="video-modal">
-        {/* <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header> */}
-        <Modal.Body>
-          <ReactPlayer playing="false" url={selectedItem.video} />
-          {/* <video controls className="video-player" autoPlay>
-            <source src={selectedItem.video} type="video/mp4" />
-          </video> */}
-        </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer> */}
-      </Modal>
-    );
-  };
-  return (
-    <div className="home-page">
-    
-        <HeaderSticky/>
-        <Header />
-      <div className="page-content">
-        {renderModal()}
-        <div className="card-container">
-          {videoConfig.map((item) => {
-            return <InfoCard item={item} onClickSeeHow={onClickSeeHow} />;
-          })}
-        </div>
-        <div className="work-container">
-          <div className="work-header">
-            <Rotation text="TAG LINE COMES. WE ARE WISEAPE" />
-            <h1>ALL WORK</h1>
-            {/* <hr /> */}
-          </div>
-          <div className="work-list">
-            {videoConfig.map((item) => {
-              return (
-                <div className="work-item">
-                  <div className="work-item-hover">
-                  <img src={item.image}></img>
-                  <div className="more-layer">
-                  <div className="meet-all">
-                  <i class="fas fa-play" aria-hidden="true" onClick={()=> onClickSeeHow(item)}></i>
+      <main className="features-container">
+        <StepIndicator pageNumber={this.state.pageNumber} pageOnChange={this.pageOnChange} />
+        <ReactPageScroller
+          // ref={(c) => (this.reactPageScroller = c)}
+          className="page-scroller"
+          pageOnChange={this.pageOnChange}
+          customPageNumber={this.state.pageNumber}
+        >
+          <section className="firstBlog">
+            <div className="imgBlog">
+              <img src={Image} />
+            </div>
+            <div className="contentBlog">
+              <NavBar />
+              <div>
+                <h2>Hello. How do you do?</h2>
+                <p>We help brands become a real and meaningful contributor to our lives.</p>
+                <button className="sec-one-btn">See how</button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <WorkComponent />
+          </section>
+          {/* <section className="responsive-carousel">
+            <ArrowCarousal />
+          </section> */}
+          <section className="drumbeatBlog">
+            <div className="whiteBg">
+              <div className="subDrumBeat">
+                <h2>
+                  <Rotation />
+                  DRUMBEAT
+                </h2>
+
+                <div className="drumBeatImagesBlog">
+                  <div className="drumimg-card">
+                    <div className="drumimg">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                      <i class="fas fa-arrow-up"></i>
+                    </div>
+
+                    <h1>Lorem ipsum doler with site amen</h1>
+                    <p>We are driven by the driven and we don't get anything.</p>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
+                  </div>
+                  <div className="drumimg-card">
+                    <div className="drumimg">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                      <i class="fas fa-arrow-up"></i>
+                    </div>
+
+                    <h1>Lorem ipsum doler with site amen</h1>
+                    <p>We are driven by the driven and we don't get anything.</p>
+                    <span style={ { fontStyle: "italic"}}>-By Aditya A. | 05 mins read</span>
+                  </div>
+                  <div className="drumimg-card">
+                    <div className="drumimg">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTepn2GOGauQdORu3oqqTBJblJZgDQ-lJZewg&usqp=CAU" />
+                      <i class="fas fa-arrow-up"></i>
+                    </div>
+
+                    <h1>Lorem ipsum doler with site amen</h1>
+                    <p>We are driven by the driven and we don't get anything.</p>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
+                  </div>
+                  
+                </div>
+                <div className="viewBtnRes">
+              <button>VIEW ALL ARTICLES</button>
+             
+            </div>
+                <div className="carousalBlog">
+                  <Carousal />
+                  <button>view all items</button>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+          <section className="bg-Black-container">
+            <div className="bg-black-blog">
+              <div className="black_first">
+                <h2>
+                  THE <br /> SHREWDNESS
+                </h2>
+                <h1> THE SHREWDNESS</h1>
+              </div>
+              <div className="text-wrapper-blog">
+                <div>
+                   If you're the kind of person wants to inspire postive change, if is to think inside the box and is 
+                   and is looking for opportunity  to take change you're checking out an agency that you should part of.
+                </div>
+              </div>
+              <div className="responsive-images-blog">
+                <img src="https://image1.masterfile.com/getImage/ODc3LTA4MTI5NDM3ZW4uMDAwMDAwMDA=AEnoCK/877-08129437en_Masterfile.jpg" />
+                <img src="https://i.pinimg.com/474x/ea/27/0d/ea270d4d381838c06c5b004edfe64950.jpg" />
+              </div>
+              <div className="responsive-images-blog2">
+                <img src="https://image.freepik.com/free-photo/beautiful-business-woman-blue-suit-is-smiling-white-background_33799-2639.jpg" />
+                <img src="https://i.pinimg.com/originals/10/17/23/1017230f6ed9a3ecdbb65ea9494bdc58.jpg" />
+              </div>
+            </div>
+            <div className="imagesBlog-container">
+              <div className="wrapper-img-blog">
+                <img src={require("../../images/workimages/meet3.JPG")} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
                   </div>
                 </div>
+              </div>
+              <div className="wrapper-img-blog ">
+                <img src={require("../../images/workimages/meet2.jpg")} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
-                  <h3>
-                    DIGITAL ACTIVATION<br></br>ENGAGES BIG
-                  </h3>
-                  <h1>{item.name}</h1>
+              </div>
+              <div className="wrapper-img-blog">
+                <img src={require("../../images/workimages/meet1.JPG")} />
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+              </div>
+              <div className="wrapper-img-blog ">
+                <img src={require("../../images/workimages/meet4.JPG")} />
+                <div className="more-layer">
+                  <div className="meet-all">
+                    <i className="fas fa-arrow-up" />
+                    <div>MEET ALL</div>
+                  </div>
+                </div>
+                <div className="img_description_layer">
+                  <div className="img-description-content">
+                    <p className="img_description">
+                      We are driven by the driven and we don't let anything get in the way.
+                      <div style={{ backgroundColor: "#f814cb" }}>Sushant Shrike</div>
+                    </p>
+                    <Rotation
+                      fill=""
+                      text=". IMPULSIVE &nbsp; .	&nbsp; TREKKER 	&nbsp; .	&nbsp; DESIGNER .&nbsp;&nbsp;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="hang-container">
+            <ContactUsComponent />
+            <footer>footer</footer>
+          </section>
+        </ReactPageScroller>
+      </main>
+    );
+  }
+}
 
-      <div className="footer">
-        <h1>Footer</h1>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
+export default Features;
