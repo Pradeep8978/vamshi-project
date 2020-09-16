@@ -145,6 +145,13 @@ const WorkComponent = () => {
                   <p className="nextVideo"> Next #{item.name}</p>
                 </div>
               </div>
+              <div className="viewWorkBtn-mobile">
+                <i class="fa fa-chevron-left" aria-hidden="true" onClick={onDecrement}></i>
+                <Link className="nav-link" to="/works">
+                  View All Work
+                </Link>
+                <i class="fa fa-chevron-right" aria-hidden="true" onClick={onIncrement}></i>
+              </div>
             </div>
           );
         })}
