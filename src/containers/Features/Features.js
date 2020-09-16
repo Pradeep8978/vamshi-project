@@ -10,15 +10,29 @@ import ContactUsComponent from "./../../components/ContactUs/ContactUs";
 import Rotation from "./../../components/Rotation/Rotation";
 import ReactPageScroller from "react-page-scroller";
 import WorkComponent from "./Work";
+import StepIndicator from "../../components/StepIndicator/StepIndicator";
 
 class Features extends Component {
+  state = {
+    pageNumber: 0,
+  };
   goToPage = (pageNumber) => {
     this.reactPageScroller.goToPage(pageNumber);
+  };
+  pageOnChange = (pageNumber) => {
+    this.setState({
+      pageNumber,
+    });
   };
   render() {
     return (
       <main className="features-container">
-        <ReactPageScroller ref={(c) => (this.reactPageScroller = c)}>
+        <StepIndicator pageNumber={this.state.pageNumber} pageOnChange={this.pageOnChange} />
+        <ReactPageScroller
+          // ref={(c) => (this.reactPageScroller = c)}
+          pageOnChange={this.pageOnChange}
+          customPageNumber={this.state.pageNumber}
+        >
           <section className="firstBlog">
             <div className="imgBlog">
               <img src={Image} />

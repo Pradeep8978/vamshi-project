@@ -10,8 +10,8 @@ const videoConfig = [
     name: "Axis - Do Your Home Work",
     image: require("../../images/workimages/axis.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=g0Y3opLVAc0",
   },
@@ -19,8 +19,8 @@ const videoConfig = [
     name: "British Council - IELTS Prep App",
     image: require("../../images/workimages/darkfantasy.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=1HSZPnv5_W8&t=25s",
   },
@@ -28,8 +28,8 @@ const videoConfig = [
     name: "Dark Fantasy - Lot Can Happen  Inside",
     image: require("../../images/workimages/dhl.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=nKx1Pu6mzKQ&t=15s",
   },
@@ -37,8 +37,8 @@ const videoConfig = [
     name: "DHL - Chant for Teams",
     image: require("../../images/workimages/engage1.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=q6GH6IgcUDA&t=13s",
   },
@@ -46,8 +46,8 @@ const videoConfig = [
     name: "Engage - Blind Dating Booth",
     image: require("../../images/workimages/toffel.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=bQv2MgFniig&t=15s",
   },
@@ -55,8 +55,8 @@ const videoConfig = [
     name: "Engage - Pocket Full Of Stories 2.0",
     image: require("../../images/workimages/engage2.JPG"),
     step: "STEP:1 MINIMUM WORK : DIGITAL EXPERIENCE",
-    heading1: '#LoveImporttwo-',
-    heading2: '1 Love Both, 200Dates',
+    heading1: "#LoveImporttwo-",
+    heading2: "1 Love Both, 200Dates",
     description: "We help brands become a real and meaningful contributor to our lives.",
     video: "https://www.youtube.com/watch?v=rBmcCRrf5ZU",
   },
@@ -120,8 +120,7 @@ const WorkComponent = () => {
         .map((item) => {
           return (
             <div className="secondBlog">
-              <div className="img-wrapper" style={{ backgroundImage:`url(${item.image})` }}>
-                
+              <div className="img-wrapper" style={{ backgroundImage: `url(${item.image})` }}>
                 <div className="image-layer"></div>
                 <div className="nav-buttons">
                   <i class="fa fa-chevron-left" aria-hidden="true" onClick={onDecrement}></i>
@@ -130,14 +129,13 @@ const WorkComponent = () => {
               </div>
               <div className="textBlog">
                 <div>
-          <p className="step-content"> {item.step}</p>
+                  <p className="step-content"> {item.step}</p>
                   <h2>
-                   {item.heading1}
-                    <br />{item.heading2}
+                    {item.heading1}
+                    <br />
+                    {item.heading2}
                   </h2>
-                  <p className="step-content-two">
-                    {item.description}
-                  </p>
+                  <p className="step-content-two">{item.description}</p>
                   <button onClick={() => onClickButton(item)}>SEE HOW</button>
                 </div>
               </div>
