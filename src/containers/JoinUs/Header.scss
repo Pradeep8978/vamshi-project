@@ -11,27 +11,10 @@
     box-sizing: border-box;
     overflow: hidden;
 
-  &--scrolled {
-    position: fixed;
-    z-index: 9;
-    height: 70px;
-  }
-  // &.fixed {
-  //   position: fixed;
-  // }
-  display: flex;
-  .logo {
-    // width: 30%;
-    height: 100%;
-    img {
-      height: 100%;
-    }
-  }
-  .header-right {
-    width: 70%;
-
-    @media (max-width: 500px) {
-      width: 90%;
+    &--scrolled {
+      position: fixed;
+      z-index: 9999;
+      height: 70px;
     }
     // &.fixed {
     //   position: fixed;
