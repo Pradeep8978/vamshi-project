@@ -62,7 +62,7 @@
         padding: 10px 40px;
         border: none;
         outline: none;
-        box-shadow: 0 0 14px rgba(48, 242, 119, 0.5);
+        box-shadow: 0 0 14px whitesmoke;
         font-weight: bold;
         border-radius: 30px;
       }
@@ -76,6 +76,7 @@
     }
   }
   .drumbeatBlog {
+    position: relative;
     //   background: url("https://cdn4.vectorstock.com/i/1000x1000/93/63/green-and-yellow-glitch-background-vector-10779363.jpg");
     background: url("../../images/wa.jpg");
     background-repeat: no-repeat;
@@ -84,7 +85,8 @@
     // align-items: center;
     // justify-content: center;
     // display: flex;
-    padding: 50px;
+    padding: 40px;
+    height: 110%;
     @media only screen and (max-width: 500px) {
       // background: green;
       height: auto;
@@ -93,7 +95,9 @@
 
     .whiteBg {
       background: #fff;
-      position: relative;
+      position: absolute;
+      padding-bottom: 50px;
+      margin-right: 37px;
       .subDrumBeat {
         // padding: 20px;
         position: relative;
@@ -229,17 +233,18 @@
       }
     }
     .viewBtnRes {
-      text-align: center;
+      margin-top: 30px;
+      text-align: right;
       button {
-        display: none;
         background: #f814cb;
         color: #fff;
-        padding: 10px 20px;
+        padding: 10px 23px;
         border: none;
         outline: none;
         border-radius: 20px;
-        margin-top: 20px;
+      
         box-shadow: 0 0px 14px rgba(248, 20, 203, 0.5);
+      
 
         @media only screen and (max-width: 500px) {
           display: unset;
@@ -250,6 +255,7 @@
   .bg-Black-container {
     background: #000;
     height: 400px;
+    margin-top: 60px;
     color: #fff;
     @media only screen and (max-width: 500px) {
       height: auto;
@@ -295,10 +301,12 @@
         }
       }
       .text-wrapper-blog {
-        width: 50%;
-        padding: 0 20px;
-        font-size: 12px;
-        letter-spacing: 1.5px;
+        width: 40%;
+        padding: 0 ;
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        line-height: 1.8;
         margin: auto;
         @media only screen and (max-width: 500px) {
           width: 100%;

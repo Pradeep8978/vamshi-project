@@ -55,7 +55,7 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
                   </div>
                   <div className="drumimg-card">
                     <div className="drumimg">
@@ -65,7 +65,7 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Aditya A. | 05 mins read</span>
                   </div>
                   <div className="drumimg-card">
                     <div className="drumimg">
@@ -75,18 +75,21 @@ class Features extends Component {
 
                     <h1>Lorem ipsum doler with site amen</h1>
                     <p>We are driven by the driven and we don't get anything.</p>
-                    <span>-By Siddhant M. | 05 mins read</span>
+                    <span style={ { fontStyle: "italic"}}>-By Siddhant M. | 05 mins read</span>
                   </div>
+                  
                 </div>
+                <div className="viewBtnRes">
+              <button>VIEW ALL ARTICLES</button>
+             
+            </div>
                 <div className="carousalBlog">
                   <Carousal />
                   <button>view all items</button>
                 </div>
               </div>
             </div>
-            <div className="viewBtnRes">
-              <button>view all items</button>
-            </div>
+            
           </section>
           <section className="bg-Black-container">
             <div className="bg-black-blog">
@@ -98,10 +101,8 @@ class Features extends Component {
               </div>
               <div className="text-wrapper-blog">
                 <div>
-                  We think long and hard about your business challenges and comeup with the best way
-                  to reach your goals. Thn we develop strategies. We think long and hard about your
-                  business challenges and comeup with the best way to reach your goals. Thn we
-                  develop strategies.
+                   If you're the kind of person wants to inspire postive change, if is to think inside the box and is 
+                   and is looking for opportunity  to take change you're checking out an agency that you should part of.
                 </div>
               </div>
               <div className="responsive-images-blog">

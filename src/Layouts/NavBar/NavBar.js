@@ -12,10 +12,10 @@ class NavBar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Link className="nav-link" to="/">
-              Home
+              home .
             </Link>
             <Link className="nav-link" to="/works">
-              Works
+              works .
             </Link>
           </Nav>
           <Nav>
@@ -23,10 +23,10 @@ class NavBar extends Component {
               Join Us
             </Link> */}
             <Link className="nav-link" eventKey={2} to="aboutUs">
-              About Us
+              about Us .
             </Link>
             <Link className="nav-link" eventKey={2} to="contactUs">
-              Get in touch
+              get in touch .
             </Link>
             <Link className="nav-link" eventKey={2} href="#memes">
               <i class="fa fa-search search" aria-hidden="true"></i>
