@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  @media only screen and (max-width: 858px) {
+  @media only screen and (max-width: 500px) {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -13,8 +13,9 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    @media only screen and (max-width: 858px) {
+    @media only screen and (max-width: 500px) {
       width: 100%;
+      height: 350px;
     }
     .image-layer {
       position: absolute;
@@ -24,28 +25,27 @@
       height: 100%;
       background: #2930ae;
       opacity: 0.5;
-      
     }
     .viewWorkBtn {
       position: fixed;
-      width:140px;
-     
+      width: 140px;
+
       text-decoration: underline;
       margin-top: 550px;
       margin-left: 540px;
-      a{
+      a {
         color: #5cf564;
       }
-    }
-    @media only screen and (max-width:1024px ) {
-      .viewWorkBtn {
-     
-    margin-top: 614px;
-    margin-left: 360px;
-
+      @media (max-width: 500px) {
+        display: none;
       }
     }
-
+    @media only screen and (max-width: 1024px) {
+      .viewWorkBtn {
+        margin-top: 614px;
+        margin-left: 360px;
+      }
+    }
 
     .nav-buttons {
       position: absolute;
@@ -78,7 +78,7 @@
     //   justify-content: center;
     align-items: center;
     color: #000;
-    @media only screen and (max-width: 858px) {
+    @media only screen and (max-width: 500px) {
       width: 100%;
       text-align: center;
       font-size: 14px;
@@ -99,7 +99,7 @@
         color: #f814cb;
         letter-spacing: 2px;
         line-height: 60px;
-        @media only screen and (max-width: 858px) {
+        @media only screen and (max-width: 500px) {
           font-size: 9px;
           line-height: 30px;
         }
@@ -107,9 +107,12 @@
       .nextVideo {
         margin-top: 220px;
         margin-left: 40px;
-            color: #f814cb;
-            letter-spacing: 2px;
-            line-height: 60px;
+        color: #f814cb;
+        letter-spacing: 2px;
+        line-height: 60px;
+        @media (max-width: 500px) {
+          display: none;
+        }
       }
       .step-content-two {
         line-height: 30px;
@@ -117,9 +120,10 @@
     }
     button {
       background: #2cf135;
-      padding: 13px 50px;
+      padding: 12px 50px;
       border: none;
       outline: none;
+      font-size: 16px;
       font-weight: bold;
       border-radius: 25px;
       box-shadow: 0 0 14px rgba(44, 241, 53, 0.5);
@@ -129,10 +133,30 @@
       }
     }
   }
-  
+
   .video-player {
     max-width: 90%;
     max-height: 500px;
+  }
+
+  .viewWorkBtn-mobile {
+    display: none;
+    @media (max-width: 500px) {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      margin-top: 20px;
+      a {
+        color: #000;
+        font-size: 16px;
+        border-bottom: 1px solid #000;
+        padding: 0;
+      }
+      .fa {
+        font-size: 25px;
+      }
+    }
   }
 }
 .player-wrapper {
