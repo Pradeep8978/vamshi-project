@@ -55,12 +55,22 @@
         margin-bottom: 30px;
         &:nth-child(2n) {
           flex-direction: row-reverse;
+          @media screen and (max-width: 500px ) {
+            flex-direction: column-reverse;
+
+          }
+        }
+        @media screen and (max-width: 500px ) {
+          flex-direction: column-reverse;
         }
         .card-content {
           display: flex;
           flex-direction: column;
           align-self: center;
           width: 45%;
+          @media screen and (max-width: 500px ) {
+            text-align: center;
+          }
           // padding-right: 15%;
           h3 {
             letter-spacing: 3px;

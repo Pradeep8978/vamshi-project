@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Works.scss";
 import download from "./../../images/Logo-wa.png";
 import pic from "./../../images/potti.png";
@@ -75,6 +75,22 @@ const Home = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(()=> {
+    var pageHeader = document.querySelector(".sticky-wrapper");
+    var scroll = 0;
+    window.addEventListener("scroll", function () {
+      scroll = Math.floor(window.pageYOffset);
+      if (scroll > 150) {
+        pageHeader.classList.add("d-block");
+        pageHeader.classList.remove("d-none");
+      } else {
+        pageHeader.classList.add("d-none");
+        pageHeader.classList.remove("d-block");
+      }
+    });
+  }, []);
+
   const onClickSeeHow = (item) => {
     setSelectedItem(item);
     handleShow();
@@ -117,7 +133,6 @@ const Home = () => {
   };
   return (
     <div className="home-page">
-    
         <HeaderSticky/>
         <Header />
       <div className="page-content">

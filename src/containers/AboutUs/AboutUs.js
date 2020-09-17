@@ -3,12 +3,32 @@ import "./AboutUs.scss";
 import Logo from './../../images/logo.png'
 import NavBar from "./../../Layouts/NavBar/NavBar";
 import Rotation from "./../../components/Rotation/Rotation";
+import HeaderSticky from "../../components/Headersticky/HeaderSticky";
 
 class AboutUs extends Component {
+  componentDidMount(){
+    var pageHeader = document.querySelector(".sticky-wrapper");
+    pageHeader.classList.add("d-none");
+    var scroll = 0;
+    window.addEventListener("scroll", function () {
+      scroll = Math.floor(window.pageYOffset);
+      if (scroll > 150) {
+        pageHeader.classList.add("d-block");
+        pageHeader.classList.remove("d-none");
+      } else {
+        pageHeader.classList.add("d-none");
+        pageHeader.classList.remove("d-block");
+      }
+    });
+  }
+  componentWillUnmount(){
+    window.removeEventListener("scroll")
+  }
   render() {
     return (
       <>
         <main className="about-us-wrapper">
+          <HeaderSticky bgColor ='#f814cb' />
           <section className="wrapper">
             <NavBar />
             <div className="img-blog">

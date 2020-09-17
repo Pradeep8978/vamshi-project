@@ -19,9 +19,13 @@
       font-size:14px;
       font-weight: 700;
       color: #fff; 
+      display: flex;
+      align-items: center;
+      // text-transform: capitalize;
       .NavDot {
-        padding-left: 3px;
+        padding-left: 8px;
         text-align: center;
+        display: flex;
         i{
           color: white;
           font-size: 6px
